@@ -1,4 +1,4 @@
-import { PageMetadata } from '@/app/util/types'
+import { PageMetadata } from '@/util/types'
 
 export const homeMetadata: PageMetadata = {
   title: 'Royal Enfield Dealership & Business Partnership Opportunities',
