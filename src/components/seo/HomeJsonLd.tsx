@@ -1,3 +1,5 @@
+import { BUSINESS_EMAIL } from "@/config/constants";
+
 export default function JsonLdSchema() {
   const schema = {
     "@context": "https://schema.org",
@@ -10,14 +12,14 @@ export default function JsonLdSchema() {
       "https://facebook.com/royalenfield",
       "https://twitter.com/royalenfield",
       "https://instagram.com/royalenfield",
-      "https://youtube.com/royalenfield"
+      "https://youtube.com/royalenfield",
     ],
-    "address": {
+    address: {
       "@type": "PostalAddress",
-      "streetAddress": "123 Business Avenue",
-      "addressLocality": "Corporate Park",
-      "postalCode": "CP 12345",
-      "addressCountry": "US"
+      streetAddress: "123 Business Avenue",
+      addressLocality: "Corporate Park",
+      postalCode: "CP 12345",
+      addressCountry: "US",
     },
     "contactPoint": [{
       "@type": "ContactPoint",
@@ -28,7 +30,7 @@ export default function JsonLdSchema() {
     }],
     "offers": {
       "@type": "AggregateOffer",
-      "offers": [
+      offers: [
         {
           "@type": "Offer",
           "name": "Exclusive Dealership",
@@ -53,5 +55,5 @@ export default function JsonLdSchema() {
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
-  )
+  );
 }

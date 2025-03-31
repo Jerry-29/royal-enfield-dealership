@@ -16,7 +16,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { toast } from "sonner";
 import { useForm } from "react-hook-form";
-import { ApiError } from '@/util/types';
+import { ApiError } from "@/util/types";
+import { BUSINESS_EMAIL } from "@/config/constants";
 
 // Form validation schema
 const formSchema = z.object({
@@ -38,54 +39,51 @@ const formSchema = z.object({
 
 type FormData = z.infer<typeof formSchema>;
 
-
 export const ContactUs = () => {
-
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
-    const {
-      register,
-      handleSubmit,
-      reset,
-      formState: { errors },
-    } = useForm<FormData>({
-      resolver: zodResolver(formSchema),
-    });
-  
-    const onSubmit = async (data: FormData) => {
-      try {
-        setIsSubmitting(true);
-  
-        const response = await fetch("/api/enquiry", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        });
-  
-        const result = await response.json();
-  
-        if (!response.ok) {
-          throw new Error(result.message || "Something went wrong");
-        }
-  
-        toast.success("Thank you for your inquiry. We will contact you soon!");
-        reset(); // Reset form
-      } catch (error) {
-        if (error instanceof Error) {
-          toast.error(error.message);
-        } else if (typeof error === 'object' && error !== null) {
-          const apiError = error as ApiError;
-          toast.error(apiError.message || "An unexpected error occurred");
-        } else {
-          toast.error("Failed to submit form");
-        }
-      } finally {
-        setIsSubmitting(false);
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<FormData>({
+    resolver: zodResolver(formSchema),
+  });
+
+  const onSubmit = async (data: FormData) => {
+    try {
+      setIsSubmitting(true);
+
+      const response = await fetch("/api/enquiry", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.message || "Something went wrong");
       }
-    };
-  
+
+      toast.success("Thank you for your inquiry. We will contact you soon!");
+      reset(); // Reset form
+    } catch (error) {
+      if (error instanceof Error) {
+        toast.error(error.message);
+      } else if (typeof error === "object" && error !== null) {
+        const apiError = error as ApiError;
+        toast.error(apiError.message || "An unexpected error occurred");
+      } else {
+        toast.error("Failed to submit form");
+      }
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section id="contact" className="py-20 flex justify-center">
@@ -131,9 +129,7 @@ Chennai, Tamil Nadu 600119
                 </div>
                 <div>
                   <h3 className="font-bold mb-1">Email Us</h3>
-                  <p className="text-muted-foreground">
-                    business@enfieldempire.com
-                  </p>
+                  <p className="text-muted-foreground">{BUSINESS_EMAIL}</p>
                 </div>
               </div>
 

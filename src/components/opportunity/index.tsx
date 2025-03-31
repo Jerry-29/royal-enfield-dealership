@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Badge } from "@/components/ui/badge"
 import { BecomePartner } from "../become-partner"
-
+import { BUSINESS_EMAIL } from "@/config/constants";
 export default function OpportunitiesPage() {
   return (
     <div className="flex min-h-screen flex-col">
@@ -20,7 +20,7 @@ export default function OpportunitiesPage() {
             </div>
             <div className="flex items-center">
               <Mail className="h-4 w-4 mr-2" />
-              <span>business@enfieldempire.com</span>
+              <span>{BUSINESS_EMAIL}</span>
             </div>
           </div>
           <div className="flex space-x-3">
@@ -99,8 +99,10 @@ export default function OpportunitiesPage() {
       <header className="bg-white sticky top-0 z-10 shadow-sm flex justify-center">
         <div className="container flex justify-between items-center py-4">
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold">ENFIELD EMPIRE</span>
-            <span className="ml-2 text-sm uppercase tracking-widest">Business Partnerships</span>
+            <span className="text-2xl font-bold">ROYAL ENFIELD</span>
+            <span className="ml-2 text-sm uppercase tracking-widest">
+              Business Partnerships
+            </span>
           </Link>
           <nav className="hidden md:flex space-x-8">
             <Link href="/" className="font-medium hover:text-primary">
@@ -139,16 +141,23 @@ export default function OpportunitiesPage() {
           <div className="absolute inset-10">
             <div className="container flex justify-center center">
               <div className="max-w-2xl text-white">
-                <h1 className="text-5xl font-bold mb-4">Partnership Opportunities</h1>
+                <h1 className="text-5xl font-bold mb-4">
+                  Partnership Opportunities
+                </h1>
                 <p className="text-xl mb-8">
-                  Join the Enfield Empire family with multiple business partnership models designed to suit different
-                  markets and investment capabilities.
+                  Join the Royal Enfield family with multiple business
+                  partnership models designed to suit different markets and
+                  investment capabilities.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
                     Explore Models
                   </Button>
-                  <Button size="lg" variant="outline" className="text-black border-white hover:bg-white/4">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="text-white border-white hover:bg-white/10"
+                  >
                     Apply Now
                   </Button>
                 </div>
@@ -161,10 +170,14 @@ export default function OpportunitiesPage() {
         <section className="py-20 flex justify-center">
           <div className="container">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold mb-4">Find Your Perfect Partnership Model</h2>
+              <h2 className="text-3xl font-bold mb-4">
+                Find Your Perfect Partnership Model
+              </h2>
               <p className="text-muted-foreground max-w-3xl mx-auto">
-                Enfield Empire offers a range of partnership models to suit different markets, investment capabilities,
-                and business goals. Explore our options to find the perfect fit for your entrepreneurial journey.
+                Royal Enfield offers a range of partnership models to suit
+                different markets, investment capabilities, and business goals.
+                Explore our options to find the perfect fit for your
+                entrepreneurial journey.
               </p>
             </div>
 
@@ -177,8 +190,8 @@ export default function OpportunitiesPage() {
                   </div>
                   <CardTitle>Exclusive Dealership</CardTitle>
                   <CardDescription className="text-base">
-                    Become an exclusive Enfield Empire dealer with sales, service, and spare parts operations in your
-                    territory.
+                    Become an exclusive Royal Enfield dealer with sales,
+                    service, and spare parts operations in your territory.
                   </CardDescription>
                 </CardHeader>
                 <CardFooter>
@@ -198,7 +211,8 @@ export default function OpportunitiesPage() {
                   </div>
                   <CardTitle>Regional Distribution</CardTitle>
                   <CardDescription className="text-base">
-                    Distribute Enfield Empire motorcycles, accessories, and parts to a network of dealers in your region.
+                    Distribute Royal Enfield motorcycles, accessories, and parts
+                    to a network of dealers in your region.
                   </CardDescription>
                 </CardHeader>
                 <CardFooter>
@@ -218,7 +232,8 @@ export default function OpportunitiesPage() {
                   </div>
                   <CardTitle>Studio Store</CardTitle>
                   <CardDescription className="text-base">
-                    Open a compact Enfield Empire showroom in premium urban locations with lower investment requirements.
+                    Open a compact Royal Enfield showroom in premium urban
+                    locations with lower investment requirements.
                   </CardDescription>
                 </CardHeader>
                 <CardFooter>
@@ -238,7 +253,8 @@ export default function OpportunitiesPage() {
                   </div>
                   <CardTitle>Service Center</CardTitle>
                   <CardDescription className="text-base">
-                    Establish a dedicated Enfield Empire service center with genuine parts and accessories sales.
+                    Establish a dedicated Royal Enfield service center with
+                    genuine parts and accessories sales.
                   </CardDescription>
                 </CardHeader>
                 <CardFooter>
@@ -257,10 +273,13 @@ export default function OpportunitiesPage() {
         <section className="py-20 bg-muted flex justify-center">
           <div className="container">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold mb-4">Partnership Models Comparison</h2>
+              <h2 className="text-3xl font-bold mb-4">
+                Partnership Models Comparison
+              </h2>
               <p className="text-muted-foreground max-w-3xl mx-auto">
-                Compare our different partnership models to find the one that best suits your business goals, market
-                conditions, and investment capacity.
+                Compare our different partnership models to find the one that
+                best suits your business goals, market conditions, and
+                investment capacity.
               </p>
             </div>
 
@@ -277,30 +296,46 @@ export default function OpportunitiesPage() {
                 </TableHeader>
                 <TableBody>
                   <TableRow>
-                    <TableCell className="font-medium">Investment Level</TableCell>
+                    <TableCell className="font-medium">
+                      Investment Level
+                    </TableCell>
                     <TableCell>
-                      <Badge variant="outline" className="bg-red-50 text-red-700 border-red-200">
+                      <Badge
+                        variant="outline"
+                        className="bg-red-50 text-red-700 border-red-200"
+                      >
                         High
                       </Badge>
                     </TableCell>
                     <TableCell>
-                      <Badge variant="outline" className="bg-red-50 text-red-700 border-red-200">
+                      <Badge
+                        variant="outline"
+                        className="bg-red-50 text-red-700 border-red-200"
+                      >
                         Very High
                       </Badge>
                     </TableCell>
                     <TableCell>
-                      <Badge variant="outline" className="bg-amber-50 text-amber-700 border-amber-200">
+                      <Badge
+                        variant="outline"
+                        className="bg-amber-50 text-amber-700 border-amber-200"
+                      >
                         Medium
                       </Badge>
                     </TableCell>
                     <TableCell>
-                      <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">
+                      <Badge
+                        variant="outline"
+                        className="bg-green-50 text-green-700 border-green-200"
+                      >
                         Low
                       </Badge>
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">Space Requirement</TableCell>
+                    <TableCell className="font-medium">
+                      Space Requirement
+                    </TableCell>
                     <TableCell>3,000-5,000 sq ft</TableCell>
                     <TableCell>10,000+ sq ft</TableCell>
                     <TableCell>800-1,500 sq ft</TableCell>
@@ -320,7 +355,9 @@ export default function OpportunitiesPage() {
                     <TableCell>Limited Models</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">Service Operations</TableCell>
+                    <TableCell className="font-medium">
+                      Service Operations
+                    </TableCell>
                     <TableCell>
                       <Check className="h-5 w-5 text-green-600" />
                     </TableCell>
@@ -331,7 +368,9 @@ export default function OpportunitiesPage() {
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">Spare Parts Sales</TableCell>
+                    <TableCell className="font-medium">
+                      Spare Parts Sales
+                    </TableCell>
                     <TableCell>
                       <Check className="h-5 w-5 text-green-600" />
                     </TableCell>
@@ -344,7 +383,9 @@ export default function OpportunitiesPage() {
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">Accessories & Apparel</TableCell>
+                    <TableCell className="font-medium">
+                      Accessories & Apparel
+                    </TableCell>
                     <TableCell>
                       <Check className="h-5 w-5 text-green-600" />
                     </TableCell>
@@ -357,14 +398,18 @@ export default function OpportunitiesPage() {
                     <TableCell>Limited Range</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">Exclusivity Rights</TableCell>
+                    <TableCell className="font-medium">
+                      Exclusivity Rights
+                    </TableCell>
                     <TableCell>Territory-based</TableCell>
                     <TableCell>Regional</TableCell>
                     <TableCell>Limited Area</TableCell>
                     <TableCell>Service Territory</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="font-medium">Typical ROI Timeline</TableCell>
+                    <TableCell className="font-medium">
+                      Typical ROI Timeline
+                    </TableCell>
                     <TableCell>24-36 months</TableCell>
                     <TableCell>36-48 months</TableCell>
                     <TableCell>18-24 months</TableCell>
@@ -373,8 +418,12 @@ export default function OpportunitiesPage() {
                   <TableRow>
                     <TableCell className="font-medium">Best For</TableCell>
                     <TableCell>Established automotive businesses</TableCell>
-                    <TableCell>Large business groups with distribution experience</TableCell>
-                    <TableCell>Urban entrepreneurs with retail experience</TableCell>
+                    <TableCell>
+                      Large business groups with distribution experience
+                    </TableCell>
+                    <TableCell>
+                      Urban entrepreneurs with retail experience
+                    </TableCell>
                     <TableCell>Automotive service professionals</TableCell>
                   </TableRow>
                 </TableBody>
@@ -383,7 +432,8 @@ export default function OpportunitiesPage() {
 
             <div className="text-center mt-8">
               <p className="text-muted-foreground mb-4">
-                Not sure which model is right for you? Our partnership team can help you evaluate your options.
+                Not sure which model is right for you? Our partnership team can
+                help you evaluate your options.
               </p>
               <Button>Schedule a Consultation</Button>
             </div>
@@ -391,7 +441,10 @@ export default function OpportunitiesPage() {
         </section>
 
         {/* Detailed Partnership Models */}
-        <section id="exclusive-dealership" className="py-20 flex justify-center">
+        <section
+          id="exclusive-dealership"
+          className="py-20 flex justify-center"
+        >
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
@@ -414,9 +467,10 @@ export default function OpportunitiesPage() {
                 </div>
 
                 <p className="text-muted-foreground mb-6">
-                  Become an exclusive Enfield Empire dealer with comprehensive sales, service, and spare parts operations
-                  in your territory. This is our most comprehensive partnership model, offering the full Enfield Empire
-                  experience to customers in your market.
+                  Become an exclusive Royal Enfield dealer with comprehensive
+                  sales, service, and spare parts operations in your territory.
+                  This is our most comprehensive partnership model, offering the
+                  full Royal Enfield experience to customers in your market.
                 </p>
 
                 <div className="space-y-4 mb-8">
@@ -427,8 +481,8 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Complete Business Model</h3>
                       <p className="text-muted-foreground">
-                        Full-service dealership with motorcycle sales, service center, spare parts, accessories, and
-                        apparel.
+                        Full-service dealership with motorcycle sales, service
+                        center, spare parts, accessories, and apparel.
                       </p>
                     </div>
                   </div>
@@ -440,7 +494,8 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Territorial Exclusivity</h3>
                       <p className="text-muted-foreground">
-                        Exclusive rights to sell Enfield Empire motorcycles within your designated territory.
+                        Exclusive rights to sell Royal Enfield motorcycles
+                        within your designated territory.
                       </p>
                     </div>
                   </div>
@@ -452,8 +507,9 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Multiple Revenue Streams</h3>
                       <p className="text-muted-foreground">
-                        Generate income from new motorcycle sales, service operations, spare parts, accessories,
-                        apparel, and used motorcycle trade-ins.
+                        Generate income from new motorcycle sales, service
+                        operations, spare parts, accessories, apparel, and used
+                        motorcycle trade-ins.
                       </p>
                     </div>
                   </div>
@@ -465,8 +521,9 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Comprehensive Support</h3>
                       <p className="text-muted-foreground">
-                        Full access to Enfield Empire&apos;s business support programs, including setup assistance, staff
-                        training, marketing support, and more.
+                        Full access to Royal Enfield&apos;s business support
+                        programs, including setup assistance, staff training,
+                        marketing support, and more.
                       </p>
                     </div>
                   </div>
@@ -476,19 +533,27 @@ export default function OpportunitiesPage() {
                   <h3 className="font-bold mb-2">Investment Overview</h3>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <p className="text-sm text-muted-foreground">Investment Range</p>
+                      <p className="text-sm text-muted-foreground">
+                        Investment Range
+                      </p>
                       <p className="font-bold">$500,000 - $1,000,000</p>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Space Requirement</p>
+                      <p className="text-sm text-muted-foreground">
+                        Space Requirement
+                      </p>
                       <p className="font-bold">3,000 - 5,000 sq ft</p>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Staff Requirement</p>
+                      <p className="text-sm text-muted-foreground">
+                        Staff Requirement
+                      </p>
                       <p className="font-bold">10 - 15 personnel</p>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Expected ROI Timeline</p>
+                      <p className="text-sm text-muted-foreground">
+                        Expected ROI Timeline
+                      </p>
                       <p className="font-bold">24 - 36 months</p>
                     </div>
                   </div>
@@ -505,7 +570,10 @@ export default function OpportunitiesPage() {
           </div>
         </section>
 
-        <section id="regional-distribution" className="py-20 bg-muted flex justify-center">
+        <section
+          id="regional-distribution"
+          className="py-20 bg-muted flex justify-center"
+        >
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
@@ -515,14 +583,17 @@ export default function OpportunitiesPage() {
                   </div>
                   <div>
                     <Badge className="mb-2">Strategic Partnership</Badge>
-                    <h2 className="text-3xl font-bold">Regional Distribution</h2>
+                    <h2 className="text-3xl font-bold">
+                      Regional Distribution
+                    </h2>
                   </div>
                 </div>
 
                 <p className="text-muted-foreground mb-6">
-                  Become a regional distributor for Enfield Empire with exclusive rights to import, distribute, and
-                  develop a network of dealers in your region. This high-level partnership is ideal for established
-                  business groups with distribution experience.
+                  Become a regional distributor for Royal Enfield with exclusive
+                  rights to import, distribute, and develop a network of dealers
+                  in your region. This high-level partnership is ideal for
+                  established business groups with distribution experience.
                 </p>
 
                 <div className="space-y-4 mb-8">
@@ -533,8 +604,8 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Regional Exclusivity</h3>
                       <p className="text-muted-foreground">
-                        Exclusive rights to import and distribute Enfield Empire motorcycles, parts, and accessories in
-                        your region.
+                        Exclusive rights to import and distribute Royal Enfield
+                        motorcycles, parts, and accessories in your region.
                       </p>
                     </div>
                   </div>
@@ -546,8 +617,9 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Dealer Network Development</h3>
                       <p className="text-muted-foreground">
-                        Build and manage a network of Enfield Empire dealers within your territory, creating a scalable
-                        business model.
+                        Build and manage a network of Royal Enfield dealers
+                        within your territory, creating a scalable business
+                        model.
                       </p>
                     </div>
                   </div>
@@ -559,8 +631,9 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Supply Chain Management</h3>
                       <p className="text-muted-foreground">
-                        Direct import relationship with Enfield Empire&apos;s manufacturing facilities, with optimized
-                        logistics and inventory management.
+                        Direct import relationship with Royal Enfield&apos;s
+                        manufacturing facilities, with optimized logistics and
+                        inventory management.
                       </p>
                     </div>
                   </div>
@@ -572,7 +645,8 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Brand Development</h3>
                       <p className="text-muted-foreground">
-                        Lead Enfield Empire&apos;s brand development and marketing initiatives across your entire region.
+                        Lead Royal Enfield&apos;s brand development and
+                        marketing initiatives across your entire region.
                       </p>
                     </div>
                   </div>
@@ -582,19 +656,27 @@ export default function OpportunitiesPage() {
                   <h3 className="font-bold mb-2">Investment Overview</h3>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <p className="text-sm text-muted-foreground">Investment Range</p>
+                      <p className="text-sm text-muted-foreground">
+                        Investment Range
+                      </p>
                       <p className="font-bold">$2,000,000 - $5,000,000+</p>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Facility Requirement</p>
+                      <p className="text-sm text-muted-foreground">
+                        Facility Requirement
+                      </p>
                       <p className="font-bold">10,000+ sq ft</p>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Team Requirement</p>
+                      <p className="text-sm text-muted-foreground">
+                        Team Requirement
+                      </p>
                       <p className="font-bold">20+ personnel</p>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Expected ROI Timeline</p>
+                      <p className="text-sm text-muted-foreground">
+                        Expected ROI Timeline
+                      </p>
                       <p className="font-bold">36 - 48 months</p>
                     </div>
                   </div>
@@ -604,7 +686,9 @@ export default function OpportunitiesPage() {
                   <Button className="flex items-center gap-2">
                     <Download className="h-4 w-4" /> Distribution Brochure
                   </Button>
-                  <Button variant="outline">Apply for Distribution Rights</Button>
+                  <Button variant="outline">
+                    Apply for Distribution Rights
+                  </Button>
                 </div>
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden order-1 lg:order-2">
@@ -667,8 +751,8 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Premium Urban Locations</h3>
                       <p className="text-muted-foreground">
-                        Ideal for high-foot-traffic areas in urban centers where a full dealership might not be
-                        feasible.
+                        Ideal for high-foot-traffic areas in urban centers where
+                        a full dealership might not be feasible.
                       </p>
                     </div>
                   </div>
@@ -692,8 +776,8 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Basic Service Support</h3>
                       <p className="text-muted-foreground">
-                        Offer basic maintenance services with the option to partner with nearby service centers for
-                        major repairs.
+                        Offer basic maintenance services with the option to
+                        partner with nearby service centers for major repairs.
                       </p>
                     </div>
                   </div>
@@ -703,19 +787,27 @@ export default function OpportunitiesPage() {
                   <h3 className="font-bold mb-2">Investment Overview</h3>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <p className="text-sm text-muted-foreground">Investment Range</p>
+                      <p className="text-sm text-muted-foreground">
+                        Investment Range
+                      </p>
                       <p className="font-bold">$150,000 - $300,000</p>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Space Requirement</p>
+                      <p className="text-sm text-muted-foreground">
+                        Space Requirement
+                      </p>
                       <p className="font-bold">800 - 1,500 sq ft</p>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Staff Requirement</p>
+                      <p className="text-sm text-muted-foreground">
+                        Staff Requirement
+                      </p>
                       <p className="font-bold">4 - 6 personnel</p>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Expected ROI Timeline</p>
+                      <p className="text-sm text-muted-foreground">
+                        Expected ROI Timeline
+                      </p>
                       <p className="font-bold">18 - 24 months</p>
                     </div>
                   </div>
@@ -732,7 +824,10 @@ export default function OpportunitiesPage() {
           </div>
         </section>
 
-        <section id="service-center" className="py-20 bg-muted flex justify-center">
+        <section
+          id="service-center"
+          className="py-20 bg-muted flex justify-center"
+        >
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
@@ -809,19 +904,27 @@ export default function OpportunitiesPage() {
                   <h3 className="font-bold mb-2">Investment Overview</h3>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <p className="text-sm text-muted-foreground">Investment Range</p>
+                      <p className="text-sm text-muted-foreground">
+                        Investment Range
+                      </p>
                       <p className="font-bold">$100,000 - $200,000</p>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Space Requirement</p>
+                      <p className="text-sm text-muted-foreground">
+                        Space Requirement
+                      </p>
                       <p className="font-bold">1,500 - 2,500 sq ft</p>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Staff Requirement</p>
+                      <p className="text-sm text-muted-foreground">
+                        Staff Requirement
+                      </p>
                       <p className="font-bold">5 - 8 personnel</p>
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Expected ROI Timeline</p>
+                      <p className="text-sm text-muted-foreground">
+                        Expected ROI Timeline
+                      </p>
                       <p className="font-bold">12 - 18 months</p>
                     </div>
                   </div>
@@ -850,7 +953,9 @@ export default function OpportunitiesPage() {
         <section className="py-20 flex justify-center">
           <div className="container">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold mb-4">Partnership Application Process</h2>
+              <h2 className="text-3xl font-bold mb-4">
+                Partnership Application Process
+              </h2>
               <p className="text-muted-foreground max-w-3xl mx-auto">
                 Our streamlined application process is designed to help you become a Enfield Empire business partner
                 efficiently and effectively.
@@ -864,7 +969,8 @@ export default function OpportunitiesPage() {
                 </div>
                 <h3 className="font-bold mb-2">Initial Application</h3>
                 <p className="text-muted-foreground text-sm">
-                  Submit your application with business details and preferred partnership model.
+                  Submit your application with business details and preferred
+                  partnership model.
                 </p>
                 <div className="hidden md:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
                   <ArrowRight className="h-6 w-6 text-muted-foreground" />
@@ -877,7 +983,8 @@ export default function OpportunitiesPage() {
                 </div>
                 <h3 className="font-bold mb-2">Initial Screening</h3>
                 <p className="text-muted-foreground text-sm">
-                  Our team reviews your application and conducts an initial assessment of market potential.
+                  Our team reviews your application and conducts an initial
+                  assessment of market potential.
                 </p>
                 <div className="hidden md:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
                   <ArrowRight className="h-6 w-6 text-muted-foreground" />
@@ -890,7 +997,8 @@ export default function OpportunitiesPage() {
                 </div>
                 <h3 className="font-bold mb-2">Detailed Evaluation</h3>
                 <p className="text-muted-foreground text-sm">
-                  In-depth assessment of your business plan, location, financial capacity, and market analysis.
+                  In-depth assessment of your business plan, location, financial
+                  capacity, and market analysis.
                 </p>
                 <div className="hidden md:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
                   <ArrowRight className="h-6 w-6 text-muted-foreground" />
@@ -903,7 +1011,8 @@ export default function OpportunitiesPage() {
                 </div>
                 <h3 className="font-bold mb-2">Partnership Agreement</h3>
                 <p className="text-muted-foreground text-sm">
-                  Finalize terms, sign partnership agreement, and complete initial investment requirements.
+                  Finalize terms, sign partnership agreement, and complete
+                  initial investment requirements.
                 </p>
                 <div className="hidden md:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
                   <ArrowRight className="h-6 w-6 text-muted-foreground" />
@@ -931,7 +1040,9 @@ export default function OpportunitiesPage() {
         <section className="py-20 bg-muted flex justify-center">
           <div className="container">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold mb-4">Partner Success Stories</h2>
+              <h2 className="text-3xl font-bold mb-4">
+                Partner Success Stories
+              </h2>
               <p className="text-muted-foreground max-w-3xl mx-auto">
                 Hear from our successful business partners about their experience with Enfield Empire.
               </p>
@@ -949,7 +1060,9 @@ export default function OpportunitiesPage() {
                     </div>
                     <div>
                       <CardTitle>John Doe</CardTitle>
-                      <CardDescription>Exclusive Dealership, USA</CardDescription>
+                      <CardDescription>
+                        Exclusive Dealership, USA
+                      </CardDescription>
                     </div>
                   </div>
                 </CardHeader>
@@ -969,8 +1082,8 @@ export default function OpportunitiesPage() {
                     projections.&quot;
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    <span className="font-bold">Results:</span> 120% sales growth in first 2 years, ROI achieved in 30
-                    months
+                    <span className="font-bold">Results:</span> 120% sales
+                    growth in first 2 years, ROI achieved in 30 months
                   </p>
                 </CardContent>
                 <CardFooter>
@@ -1010,8 +1123,8 @@ export default function OpportunitiesPage() {
                     investment. The prime urban location and focused inventory model has proven highly profitable.&quot;
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    <span className="font-bold">Results:</span> Profitable within 14 months, expanded to second location
-                    in year 3
+                    <span className="font-bold">Results:</span> Profitable
+                    within 14 months, expanded to second location in year 3
                   </p>
                 </CardContent>
                 <CardFooter>
@@ -1032,7 +1145,9 @@ export default function OpportunitiesPage() {
                     </div>
                     <div>
                       <CardTitle>Robert Johnson</CardTitle>
-                      <CardDescription>Regional Distributor, Asia</CardDescription>
+                      <CardDescription>
+                        Regional Distributor, Asia
+                      </CardDescription>
                     </div>
                   </div>
                 </CardHeader>
@@ -1047,12 +1162,14 @@ export default function OpportunitiesPage() {
                     />
                   </div>
                   <p className="italic text-muted-foreground mb-4">
-                    &quot;As a regional distributor, we&apos;ve built a network of 15 dealerships across our territory. Royal
-                    Enfield&apos;s growing popularity and our exclusive distribution rights have created a thriving business
-                    ecosystem.&quot;
+                    &quot;As a regional distributor, we&apos;ve built a network
+                    of 15 dealerships across our territory. Royal Enfield&apos;s
+                    growing popularity and our exclusive distribution rights
+                    have created a thriving business ecosystem.&quot;
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    <span className="font-bold">Results:</span> 35% year-over-year growth, network expanded from 5 to 15
+                    <span className="font-bold">Results:</span> 35%
+                    year-over-year growth, network expanded from 5 to 15
                     dealerships
                   </p>
                 </CardContent>
@@ -1074,9 +1191,12 @@ export default function OpportunitiesPage() {
         <section className="py-20 flex justify-center">
           <div className="container">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-3xl font-bold mb-4">
+                Frequently Asked Questions
+              </h2>
               <p className="text-muted-foreground max-w-3xl mx-auto">
-                Find answers to common questions about our partnership opportunities.
+                Find answers to common questions about our partnership
+                opportunities.
               </p>
             </div>
 
@@ -1086,14 +1206,18 @@ export default function OpportunitiesPage() {
                   What are the financial requirements for becoming a Enfield Empire partner?
                 </h3>
                 <p className="text-muted-foreground">
-                  Financial requirements vary by partnership model. Exclusive dealerships typically require
-                  $500,000-$1,000,000 in investment capital, while Studio Stores start at around $150,000. We also
-                  assess liquid capital availability, net worth, and credit history as part of our evaluation process.
+                  Financial requirements vary by partnership model. Exclusive
+                  dealerships typically require $500,000-$1,000,000 in
+                  investment capital, while Studio Stores start at around
+                  $150,000. We also assess liquid capital availability, net
+                  worth, and credit history as part of our evaluation process.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="font-bold text-lg mb-2">Do I need prior experience in the motorcycle industry?</h3>
+                <h3 className="font-bold text-lg mb-2">
+                  Do I need prior experience in the motorcycle industry?
+                </h3>
                 <p className="text-muted-foreground">
                   While prior experience in the automotive or motorcycle industry is beneficial, it&apos;s not always
                   required. We value business acumen, entrepreneurial spirit, and passion for the Enfield Empire brand.
@@ -1102,11 +1226,15 @@ export default function OpportunitiesPage() {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="font-bold text-lg mb-2">How long does the application and approval process take?</h3>
+                <h3 className="font-bold text-lg mb-2">
+                  How long does the application and approval process take?
+                </h3>
                 <p className="text-muted-foreground">
-                  The timeline varies depending on the partnership model and market conditions. Typically, the process
-                  takes 3-6 months from initial application to final approval. Studio Stores and Service Centers may
-                  have a faster timeline, while Regional Distribution partnerships may take longer due to their
+                  The timeline varies depending on the partnership model and
+                  market conditions. Typically, the process takes 3-6 months
+                  from initial application to final approval. Studio Stores and
+                  Service Centers may have a faster timeline, while Regional
+                  Distribution partnerships may take longer due to their
                   complexity.
                 </p>
               </div>
@@ -1127,9 +1255,11 @@ export default function OpportunitiesPage() {
                   Can I upgrade from one partnership model to another over time?
                 </h3>
                 <p className="text-muted-foreground">
-                  Yes, many of our partners start with smaller formats like Service Centers or Studio Stores and upgrade
-                  to full dealerships as their business grows. We have established pathways for progression and provide
-                  support during transitions between partnership models.
+                  Yes, many of our partners start with smaller formats like
+                  Service Centers or Studio Stores and upgrade to full
+                  dealerships as their business grows. We have established
+                  pathways for progression and provide support during
+                  transitions between partnership models.
                 </p>
               </div>
             </div>
@@ -1141,8 +1271,8 @@ export default function OpportunitiesPage() {
           <div className="container text-center">
             <h2 className="text-3xl font-bold mb-4">Ready to Join the Enfield Empire Family?</h2>
             <p className="text-gray-300 max-w-2xl mx-auto mb-8">
-              Take the first step towards a rewarding business partnership with one of the world&apos;s most iconic
-              motorcycle brands.
+              Take the first step towards a rewarding business partnership with
+              one of the world&apos;s most iconic motorcycle brands.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-primary hover:bg-primary/90">
@@ -1160,7 +1290,9 @@ export default function OpportunitiesPage() {
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div>
-                <h2 className="text-3xl font-bold mb-6">Contact Our Partnership Team</h2>
+                <h2 className="text-3xl font-bold mb-6">
+                  Contact Our Partnership Team
+                </h2>
                 <p className="text-muted-foreground mb-8">
                   Have questions about becoming a Enfield Empire business partner? Our dedicated team is here to help you
                   explore the opportunities.
@@ -1242,7 +1374,9 @@ Chennai, Tamil Nadu 600119</p>
                 </div>
 
                 <div className="bg-muted p-6 rounded-lg">
-                  <h3 className="font-bold text-lg mb-4">Regional Partnership Offices</h3>
+                  <h3 className="font-bold text-lg mb-4">
+                    Regional Partnership Offices
+                  </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <h4 className="font-bold">North America</h4>
@@ -1289,11 +1423,16 @@ Chennai, Tamil Nadu 600119</p>
               </div>
 
               <div className="bg-white p-8 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold mb-6">Partnership Inquiry Form</h3>
+                <h3 className="text-xl font-bold mb-6">
+                  Partnership Inquiry Form
+                </h3>
                 <form className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <label htmlFor="first-name" className="text-sm font-medium">
+                      <label
+                        htmlFor="first-name"
+                        className="text-sm font-medium"
+                      >
                         First Name
                       </label>
                       <input
@@ -1303,7 +1442,10 @@ Chennai, Tamil Nadu 600119</p>
                       />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="last-name" className="text-sm font-medium">
+                      <label
+                        htmlFor="last-name"
+                        className="text-sm font-medium"
+                      >
                         Last Name
                       </label>
                       <input
@@ -1346,7 +1488,10 @@ Chennai, Tamil Nadu 600119</p>
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="partnership-type" className="text-sm font-medium">
+                    <label
+                      htmlFor="partnership-type"
+                      className="text-sm font-medium"
+                    >
                       Partnership Type
                     </label>
                     <select
@@ -1355,7 +1500,9 @@ Chennai, Tamil Nadu 600119</p>
                     >
                       <option value="">Select Partnership Type</option>
                       <option value="dealership">Exclusive Dealership</option>
-                      <option value="distribution">Regional Distribution</option>
+                      <option value="distribution">
+                        Regional Distribution
+                      </option>
                       <option value="studio">Studio Store</option>
                       <option value="service">Service Center</option>
                     </select>
@@ -1396,11 +1543,15 @@ Chennai, Tamil Nadu 600119</p>
             <div>
               <h3 className="text-xl font-bold mb-4">Enfield Empire Business</h3>
               <p className="text-gray-400 mb-4">
-                Your gateway to partnership opportunities with the world&apos;s oldest motorcycle brand in continuous
-                production.
+                Your gateway to partnership opportunities with the world&apos;s
+                oldest motorcycle brand in continuous production.
               </p>
               <div className="flex space-x-4">
-                <Link href="#" className="text-gray-400 hover:text-white" aria-label="Facebook">
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white"
+                  aria-label="Facebook"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -1416,7 +1567,11 @@ Chennai, Tamil Nadu 600119</p>
                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                   </svg>
                 </Link>
-                <Link href="#" className="text-gray-400 hover:text-white" aria-label="Instagram">
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white"
+                  aria-label="Instagram"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -1434,7 +1589,11 @@ Chennai, Tamil Nadu 600119</p>
                     <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                   </svg>
                 </Link>
-                <Link href="#" className="text-gray-400 hover:text-white" aria-label="Youtube">
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white"
+                  aria-label="Youtube"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -1451,7 +1610,11 @@ Chennai, Tamil Nadu 600119</p>
                     <path d="m10 15 5-3-5-3z" />
                   </svg>
                 </Link>
-                <Link href="#" className="text-gray-400 hover:text-white" aria-label="Twitter">
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white"
+                  aria-label="Twitter"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -1479,22 +1642,34 @@ Chennai, Tamil Nadu 600119</p>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/opportunities" className="text-gray-400 hover:text-white">
+                  <Link
+                    href="/opportunities"
+                    className="text-gray-400 hover:text-white"
+                  >
                     Partnership Opportunities
                   </Link>
                 </li>
                 <li>
-                  <Link href="/support" className="text-gray-400 hover:text-white">
+                  <Link
+                    href="/support"
+                    className="text-gray-400 hover:text-white"
+                  >
                     Business Support
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#about" className="text-gray-400 hover:text-white">
+                  <Link
+                    href="/#about"
+                    className="text-gray-400 hover:text-white"
+                  >
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#contact" className="text-gray-400 hover:text-white">
+                  <Link
+                    href="/#contact"
+                    className="text-gray-400 hover:text-white"
+                  >
                     Contact
                   </Link>
                 </li>
@@ -1505,22 +1680,34 @@ Chennai, Tamil Nadu 600119</p>
               <h3 className="text-xl font-bold mb-4">Partnership Models</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#exclusive-dealership" className="text-gray-400 hover:text-white">
+                  <Link
+                    href="#exclusive-dealership"
+                    className="text-gray-400 hover:text-white"
+                  >
                     Exclusive Dealership
                   </Link>
                 </li>
                 <li>
-                  <Link href="#regional-distribution" className="text-gray-400 hover:text-white">
+                  <Link
+                    href="#regional-distribution"
+                    className="text-gray-400 hover:text-white"
+                  >
                     Regional Distribution
                   </Link>
                 </li>
                 <li>
-                  <Link href="#studio-store" className="text-gray-400 hover:text-white">
+                  <Link
+                    href="#studio-store"
+                    className="text-gray-400 hover:text-white"
+                  >
                     Studio Store
                   </Link>
                 </li>
                 <li>
-                  <Link href="#service-center" className="text-gray-400 hover:text-white">
+                  <Link
+                    href="#service-center"
+                    className="text-gray-400 hover:text-white"
+                  >
                     Service Center
                   </Link>
                 </li>
@@ -1601,7 +1788,9 @@ Chennai, Tamil Nadu 600119</span>
                     <circle cx="12" cy="12" r="10" />
                     <polyline points="12 6 12 12 16 14" />
                   </svg>
-                  <span className="text-gray-400">Mon-Fri: 9AM-6PM, Sat: 10AM-4PM</span>
+                  <span className="text-gray-400">
+                    Mon-Fri: 9AM-6PM, Sat: 10AM-4PM
+                  </span>
                 </li>
               </ul>
             </div>
@@ -1622,6 +1811,5 @@ Chennai, Tamil Nadu 600119</span>
         </div>
       </footer>
     </div>
-  )
+  );
 }
-
