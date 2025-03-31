@@ -1,5 +1,3 @@
-import { BUSINESS_EMAIL } from "@/config/constants";
-
 export default function JsonLdSchema() {
   const schema = {
     "@context": "https://schema.org",
