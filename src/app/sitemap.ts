@@ -1,20 +1,20 @@
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://royalenfield-dealership.com'
-  
+  const baseUrl = "https://enfieldempire.com/";
+
   const routes = [
-    '',
-    '/about',
-    '/support',
-    '/contact',
-    '/dealership-opportunities'
-  ]
+    "",
+    "/about",
+    "/support",
+    "/contact",
+    "/dealership-opportunities",
+  ];
 
   return routes.map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
-    changeFrequency: route === '' ? 'daily' : 'weekly',
-    priority: route === '' ? 1 : 0.8
-  }))
+    changeFrequency: route === "" ? "daily" : "weekly",
+    priority: route === "" ? 1 : 0.8,
+  }));
 }
