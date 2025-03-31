@@ -106,9 +106,9 @@ export const ContactUs = () => {
                 <div>
                   <h3 className="font-bold mb-1">Global Headquarters</h3>
                   <p className="text-muted-foreground">
-                    Main Block , Royan Enfield Tech Center ,
-296 , Rajiv Gandhi Salai , Elcot Sez, Sholinganahllur,
-Chennai, Tamil Nadu 600119
+                    Main Block , Royan Enfield Tech Center , 296 , Rajiv Gandhi
+                    Salai , Elcot Sez, Sholinganahllur, Chennai, Tamil Nadu
+                    600119
                   </p>
                 </div>
               </div>
@@ -119,7 +119,12 @@ Chennai, Tamil Nadu 600119
                 </div>
                 <div>
                   <h3 className="font-bold mb-1">Partnership Hotline</h3>
-                  <p className="text-muted-foreground">+91 9693894599</p>
+                  <a
+                    href="tel:+919693894599"
+                    className="text-muted-foreground hover:text-primary cursor-pointer"
+                  >
+                    +91 9693894599
+                  </a>
                 </div>
               </div>
 
