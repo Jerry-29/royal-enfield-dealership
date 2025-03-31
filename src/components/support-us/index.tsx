@@ -1,6 +1,6 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
 import {
   Settings,
   Users,
@@ -116,7 +116,10 @@ export default function SupportPage2() {
             <Link href="/" className="font-medium hover:text-primary">
               Home
             </Link>
-            <Link href="/#opportunities" className="font-medium hover:text-primary">
+            <Link
+              href="/#opportunities"
+              className="font-medium hover:text-primary"
+            >
               Opportunities
             </Link>
             <Link href="/support" className="font-medium text-primary">
@@ -149,7 +152,9 @@ export default function SupportPage2() {
           <div className="absolute inset-0 flex items-center flex justify-center">
             <div className="container">
               <div className="max-w-2xl text-white">
-                <h1 className="text-5xl font-bold mb-4">Comprehensive Business Support</h1>
+                <h1 className="text-5xl font-bold mb-4">
+                  Comprehensive Business Support
+                </h1>
                 <p className="text-xl mb-8">
                   We provide extensive support to ensure your Enfield Empire business thrives from day one.
                 </p>
@@ -181,8 +186,9 @@ export default function SupportPage2() {
                   </div>
                   <CardTitle>Business Setup</CardTitle>
                   <CardDescription className="text-base">
-                    Comprehensive support for location selection, showroom design, and business setup with detailed
-                    operational guidelines.
+                    Comprehensive support for location selection, showroom
+                    design, and business setup with detailed operational
+                    guidelines.
                   </CardDescription>
                 </CardHeader>
                 <CardFooter>
@@ -202,8 +208,9 @@ export default function SupportPage2() {
                   </div>
                   <CardTitle>Staff Training</CardTitle>
                   <CardDescription className="text-base">
-                    Extensive training programs for sales, service, and management teams to ensure operational
-                    excellence and customer satisfaction.
+                    Extensive training programs for sales, service, and
+                    management teams to ensure operational excellence and
+                    customer satisfaction.
                   </CardDescription>
                 </CardHeader>
                 <CardFooter>
@@ -223,8 +230,9 @@ export default function SupportPage2() {
                   </div>
                   <CardTitle>Marketing Support</CardTitle>
                   <CardDescription className="text-base">
-                    Access to global marketing assets, local campaign support, and digital marketing strategies to drive
-                    customer acquisition.
+                    Access to global marketing assets, local campaign support,
+                    and digital marketing strategies to drive customer
+                    acquisition.
                   </CardDescription>
                 </CardHeader>
                 <CardFooter>
@@ -244,8 +252,9 @@ export default function SupportPage2() {
                   </div>
                   <CardTitle>Supply Chain Management</CardTitle>
                   <CardDescription className="text-base">
-                    Efficient inventory management systems, regular supply of motorcycles, parts, and accessories with
-                    optimized logistics.
+                    Efficient inventory management systems, regular supply of
+                    motorcycles, parts, and accessories with optimized
+                    logistics.
                   </CardDescription>
                 </CardHeader>
                 <CardFooter>
@@ -265,8 +274,8 @@ export default function SupportPage2() {
                   </div>
                   <CardTitle>Financial Guidance</CardTitle>
                   <CardDescription className="text-base">
-                    Business planning support, ROI projections, and guidance on securing financing for your Royal
-                    Enfield business venture.
+                    Business planning support, ROI projections, and guidance on
+                    securing financing for your Royal Enfield business venture.
                   </CardDescription>
                 </CardHeader>
                 <CardFooter>
@@ -303,7 +312,10 @@ export default function SupportPage2() {
         </section>
 
         {/* Detailed Support Sections */}
-        <section id="business-setup" className="py-20 bg-muted flex justify-center">
+        <section
+          id="business-setup"
+          className="py-20 bg-muted flex justify-center"
+        >
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
@@ -333,8 +345,9 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">Location Selection</h3>
                       <p className="text-muted-foreground">
-                        Expert guidance on selecting the optimal location based on market analysis, target demographics,
-                        and accessibility factors.
+                        Expert guidance on selecting the optimal location based
+                        on market analysis, target demographics, and
+                        accessibility factors.
                       </p>
                     </div>
                   </div>
@@ -359,8 +372,9 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">Operational Guidelines</h3>
                       <p className="text-muted-foreground">
-                        Comprehensive operational manuals covering all aspects of day-to-day business operations, from
-                        sales processes to after-sales service.
+                        Comprehensive operational manuals covering all aspects
+                        of day-to-day business operations, from sales processes
+                        to after-sales service.
                       </p>
                     </div>
                   </div>
@@ -408,7 +422,9 @@ export default function SupportPage2() {
                   <TabsList className="grid grid-cols-3 mb-4">
                     <TabsTrigger value="sales">Sales Training</TabsTrigger>
                     <TabsTrigger value="service">Service Training</TabsTrigger>
-                    <TabsTrigger value="management">Management Training</TabsTrigger>
+                    <TabsTrigger value="management">
+                      Management Training
+                    </TabsTrigger>
                   </TabsList>
                   <TabsContent value="sales" className="space-y-4">
                     <div className="flex items-start">
@@ -484,8 +500,8 @@ export default function SupportPage2() {
                       <div>
                         <h3 className="font-bold">Service Management</h3>
                         <p className="text-muted-foreground">
-                          Workshop management, service scheduling, and customer service best practices for service
-                          departments.
+                          Workshop management, service scheduling, and customer
+                          service best practices for service departments.
                         </p>
                       </div>
                     </div>
@@ -499,8 +515,8 @@ export default function SupportPage2() {
                       <div>
                         <h3 className="font-bold">Business Operations</h3>
                         <p className="text-muted-foreground">
-                          Training on overall dealership management, KPI tracking, and performance optimization
-                          strategies.
+                          Training on overall dealership management, KPI
+                          tracking, and performance optimization strategies.
                         </p>
                       </div>
                     </div>
@@ -512,7 +528,8 @@ export default function SupportPage2() {
                       <div>
                         <h3 className="font-bold">Team Leadership</h3>
                         <p className="text-muted-foreground">
-                          Leadership development for dealership managers to effectively lead sales and service teams.
+                          Leadership development for dealership managers to
+                          effectively lead sales and service teams.
                         </p>
                       </div>
                     </div>
@@ -524,8 +541,9 @@ export default function SupportPage2() {
                       <div>
                         <h3 className="font-bold">Financial Management</h3>
                         <p className="text-muted-foreground">
-                          Training on financial aspects of dealership operations, inventory management, and
-                          profitability optimization.
+                          Training on financial aspects of dealership
+                          operations, inventory management, and profitability
+                          optimization.
                         </p>
                       </div>
                     </div>
@@ -551,7 +569,10 @@ export default function SupportPage2() {
           </div>
         </section>
 
-        <section id="marketing-support" className="py-20 bg-muted flex justify-center">
+        <section
+          id="marketing-support"
+          className="py-20 bg-muted flex justify-center"
+        >
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
@@ -593,8 +614,8 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">Local Campaign Support</h3>
                       <p className="text-muted-foreground">
-                        Assistance in developing and executing local marketing campaigns tailored to your specific
-                        market conditions.
+                        Assistance in developing and executing local marketing
+                        campaigns tailored to your specific market conditions.
                       </p>
                     </div>
                   </div>
@@ -606,8 +627,9 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">Digital Marketing</h3>
                       <p className="text-muted-foreground">
-                        Support for digital marketing initiatives, including social media strategies, content creation,
-                        and online advertising.
+                        Support for digital marketing initiatives, including
+                        social media strategies, content creation, and online
+                        advertising.
                       </p>
                     </div>
                   </div>
@@ -619,8 +641,8 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">Event Marketing</h3>
                       <p className="text-muted-foreground">
-                        Guidelines and support for organizing local events, test rides, and promotional activities to
-                        engage customers.
+                        Guidelines and support for organizing local events, test
+                        rides, and promotional activities to engage customers.
                       </p>
                     </div>
                   </div>
@@ -644,10 +666,14 @@ export default function SupportPage2() {
                 <div className="bg-primary/10 w-16 h-16 flex items-center justify-center rounded-full mb-6">
                   <ShoppingBag className="h-8 w-8 text-primary" />
                 </div>
-                <h2 className="text-3xl font-bold mb-6">Supply Chain Management</h2>
+                <h2 className="text-3xl font-bold mb-6">
+                  Supply Chain Management
+                </h2>
                 <p className="text-muted-foreground mb-6">
-                  Our supply chain management support ensures that your business has a consistent and efficient supply
-                  of motorcycles, parts, and accessories to meet customer demand and optimize your inventory investment.
+                  Our supply chain management support ensures that your business
+                  has a consistent and efficient supply of motorcycles, parts,
+                  and accessories to meet customer demand and optimize your
+                  inventory investment.
                 </p>
 
                 <div className="space-y-4 mb-8">
@@ -658,8 +684,8 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">Inventory Management</h3>
                       <p className="text-muted-foreground">
-                        Advanced inventory management systems and tools to optimize stock levels and reduce carrying
-                        costs.
+                        Advanced inventory management systems and tools to
+                        optimize stock levels and reduce carrying costs.
                       </p>
                     </div>
                   </div>
@@ -671,8 +697,8 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">Supply Chain Optimization</h3>
                       <p className="text-muted-foreground">
-                        Logistics support to ensure timely delivery of products with optimized shipping routes and
-                        costs.
+                        Logistics support to ensure timely delivery of products
+                        with optimized shipping routes and costs.
                       </p>
                     </div>
                   </div>
@@ -697,8 +723,9 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">Demand Forecasting</h3>
                       <p className="text-muted-foreground">
-                        Tools and support for accurate demand forecasting to optimize inventory levels based on seasonal
-                        trends and market conditions.
+                        Tools and support for accurate demand forecasting to
+                        optimize inventory levels based on seasonal trends and
+                        market conditions.
                       </p>
                     </div>
                   </div>
@@ -723,7 +750,10 @@ export default function SupportPage2() {
           </div>
         </section>
 
-        <section id="financial-guidance" className="py-20 bg-muted flex justify-center">
+        <section
+          id="financial-guidance"
+          className="py-20 bg-muted flex justify-center"
+        >
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="relative h-[400px] rounded-lg overflow-hidden">
@@ -740,8 +770,9 @@ export default function SupportPage2() {
                 </div>
                 <h2 className="text-3xl font-bold mb-6">Financial Guidance</h2>
                 <p className="text-muted-foreground mb-6">
-                  Our financial guidance support helps you plan, establish, and grow a financially sustainable Royal
-                  Enfield business with clear ROI projections and financing assistance.
+                  Our financial guidance support helps you plan, establish, and
+                  grow a financially sustainable Royal Enfield business with
+                  clear ROI projections and financing assistance.
                 </p>
 
                 <div className="space-y-4 mb-8">
@@ -752,8 +783,8 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">Business Planning</h3>
                       <p className="text-muted-foreground">
-                        Support in developing comprehensive business plans with realistic financial projections based on
-                        market data.
+                        Support in developing comprehensive business plans with
+                        realistic financial projections based on market data.
                       </p>
                     </div>
                   </div>
@@ -765,7 +796,8 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">ROI Projections</h3>
                       <p className="text-muted-foreground">
-                        Detailed return on investment projections for different business models and market scenarios.
+                        Detailed return on investment projections for different
+                        business models and market scenarios.
                       </p>
                     </div>
                   </div>
@@ -777,8 +809,9 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">Financing Assistance</h3>
                       <p className="text-muted-foreground">
-                        Guidance on securing financing options and potential partnerships with financial institutions
-                        for business establishment.
+                        Guidance on securing financing options and potential
+                        partnerships with financial institutions for business
+                        establishment.
                       </p>
                     </div>
                   </div>
@@ -788,10 +821,12 @@ export default function SupportPage2() {
                       <ChevronRight className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold">Financial Performance Monitoring</h3>
+                      <h3 className="font-bold">
+                        Financial Performance Monitoring
+                      </h3>
                       <p className="text-muted-foreground">
-                        Tools and support for tracking financial performance and identifying opportunities for
-                        improvement.
+                        Tools and support for tracking financial performance and
+                        identifying opportunities for improvement.
                       </p>
                     </div>
                   </div>
@@ -801,7 +836,9 @@ export default function SupportPage2() {
                   <Button className="flex items-center gap-2">
                     <Download className="h-4 w-4" /> Financial Planning Template
                   </Button>
-                  <Button variant="outline">Schedule Financial Consultation</Button>
+                  <Button variant="outline">
+                    Schedule Financial Consultation
+                  </Button>
                 </div>
               </div>
             </div>
@@ -868,8 +905,9 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">Community Engagement</h3>
                       <p className="text-muted-foreground">
-                        Strategies and tools for engaging with the local riding community through digital platforms and
-                        in-person events.
+                        Strategies and tools for engaging with the local riding
+                        community through digital platforms and in-person
+                        events.
                       </p>
                     </div>
                   </div>
@@ -900,8 +938,9 @@ export default function SupportPage2() {
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold mb-4">Our Support Process</h2>
               <p className="text-muted-foreground max-w-3xl mx-auto">
-                We&apos;ve designed a streamlined process to ensure you receive the support you need when you need it. Our
-                dedicated partnership support team is always ready to assist you.
+                We&apos;ve designed a streamlined process to ensure you receive
+                the support you need when you need it. Our dedicated partnership
+                support team is always ready to assist you.
               </p>
             </div>
 
@@ -912,8 +951,8 @@ export default function SupportPage2() {
                 </div>
                 <h3 className="font-bold mb-2">Request Support</h3>
                 <p className="text-muted-foreground text-sm">
-                  Submit your support request through our dedicated partner portal or contact your regional support
-                  manager.
+                  Submit your support request through our dedicated partner
+                  portal or contact your regional support manager.
                 </p>
               </div>
 
@@ -923,8 +962,8 @@ export default function SupportPage2() {
                 </div>
                 <h3 className="font-bold mb-2">Assessment</h3>
                 <p className="text-muted-foreground text-sm">
-                  Our support team assesses your request and identifies the most appropriate resources to address your
-                  needs.
+                  Our support team assesses your request and identifies the most
+                  appropriate resources to address your needs.
                 </p>
               </div>
 
@@ -934,8 +973,9 @@ export default function SupportPage2() {
                 </div>
                 <h3 className="font-bold mb-2">Implementation</h3>
                 <p className="text-muted-foreground text-sm">
-                  We work with you to implement the required support, whether it&apos;s training, marketing assistance, or
-                  business guidance.
+                  We work with you to implement the required support, whether
+                  it&apos;s training, marketing assistance, or business
+                  guidance.
                 </p>
               </div>
 
@@ -945,8 +985,9 @@ export default function SupportPage2() {
                 </div>
                 <h3 className="font-bold mb-2">Follow-up</h3>
                 <p className="text-muted-foreground text-sm">
-                  We conduct regular follow-ups to ensure the support provided has addressed your needs and to identify
-                  any additional requirements.
+                  We conduct regular follow-ups to ensure the support provided
+                  has addressed your needs and to identify any additional
+                  requirements.
                 </p>
               </div>
             </div>
@@ -974,7 +1015,9 @@ export default function SupportPage2() {
                   </div>
                   <div>
                     <h4 className="font-bold">John Doe</h4>
-                    <p className="text-sm text-muted-foreground">Dealership Owner, USA</p>
+                    <p className="text-sm text-muted-foreground">
+                      Dealership Owner, USA
+                    </p>
                   </div>
                 </div>
                 <p className="italic text-muted-foreground mb-4">
@@ -983,19 +1026,44 @@ export default function SupportPage2() {
                   a business relationship.&quot;
                 </p>
                 <div className="flex text-yellow-400">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 </div>
@@ -1011,7 +1079,9 @@ export default function SupportPage2() {
                   </div>
                   <div>
                     <h4 className="font-bold">Jane Smith</h4>
-                    <p className="text-sm text-muted-foreground">Distributor, Europe</p>
+                    <p className="text-sm text-muted-foreground">
+                      Distributor, Europe
+                    </p>
                   </div>
                 </div>
                 <p className="italic text-muted-foreground mb-4">
@@ -1019,19 +1089,44 @@ export default function SupportPage2() {
                   in our success. Their team helped us optimize our operations and maximize profitability from day one.&quot;
                 </p>
                 <div className="flex text-yellow-400">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 </div>
@@ -1047,28 +1142,56 @@ export default function SupportPage2() {
                   </div>
                   <div>
                     <h4 className="font-bold">Robert Johnson</h4>
-                    <p className="text-sm text-muted-foreground">Studio Store Owner, Asia</p>
+                    <p className="text-sm text-muted-foreground">
+                      Studio Store Owner, Asia
+                    </p>
                   </div>
                 </div>
                 <p className="italic text-muted-foreground mb-4">
-                  &quot;The marketing support and community building programs have been game-changers for our business. Royal
-                  Enfield&apos;s support team helped us create a thriving local rider community that drives consistent
-                  business growth.&quot;
+                  &quot;The marketing support and community building programs
+                  have been game-changers for our business. Royal Enfield&apos;s
+                  support team helped us create a thriving local rider community
+                  that drives consistent business growth.&quot;
                 </p>
                 <div className="flex text-yellow-400">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 </div>
@@ -1080,7 +1203,9 @@ export default function SupportPage2() {
         {/* CTA Section */}
         <section className="py-20 bg-black text-white flex justify-center">
           <div className="container text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Access Our Business Support?</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              Ready to Access Our Business Support?
+            </h2>
             <p className="text-gray-300 max-w-2xl mx-auto mb-8">
               Whether you&apos;re an existing partner or considering a Enfield Empire business opportunity, our comprehensive
               support programs are designed to help you succeed.
@@ -1100,56 +1225,74 @@ export default function SupportPage2() {
         <section className="py-20 flex justify-center">
           <div className="container">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+              <h2 className="text-3xl font-bold mb-4">
+                Frequently Asked Questions
+              </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Find answers to common questions about our business support programs.
+                Find answers to common questions about our business support
+                programs.
               </p>
             </div>
 
             <div className="max-w-3xl mx-auto space-y-4">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="font-bold text-lg mb-2">
-                  How soon after becoming a partner can I access the support programs?
+                  How soon after becoming a partner can I access the support
+                  programs?
                 </h3>
                 <p className="text-muted-foreground">
-                  All support programs are available immediately upon signing your partnership agreement. Your dedicated
-                  regional manager will guide you through the available resources during the onboarding process.
+                  All support programs are available immediately upon signing
+                  your partnership agreement. Your dedicated regional manager
+                  will guide you through the available resources during the
+                  onboarding process.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="font-bold text-lg mb-2">Is there a cost associated with the support programs?</h3>
+                <h3 className="font-bold text-lg mb-2">
+                  Is there a cost associated with the support programs?
+                </h3>
                 <p className="text-muted-foreground">
-                  Most of our standard support programs are included as part of your partnership agreement at no
-                  additional cost. Some specialized training programs or premium marketing services may have associated
-                  fees, which will be clearly communicated.
+                  Most of our standard support programs are included as part of
+                  your partnership agreement at no additional cost. Some
+                  specialized training programs or premium marketing services
+                  may have associated fees, which will be clearly communicated.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="font-bold text-lg mb-2">How often is training provided for staff?</h3>
+                <h3 className="font-bold text-lg mb-2">
+                  How often is training provided for staff?
+                </h3>
                 <p className="text-muted-foreground">
-                  Initial comprehensive training is provided during the business setup phase. Refresher training and new
-                  product training are scheduled regularly throughout the year. Additional training can be requested as
-                  needed.
+                  Initial comprehensive training is provided during the business
+                  setup phase. Refresher training and new product training are
+                  scheduled regularly throughout the year. Additional training
+                  can be requested as needed.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="font-bold text-lg mb-2">Can I request customized support for my specific market?</h3>
+                <h3 className="font-bold text-lg mb-2">
+                  Can I request customized support for my specific market?
+                </h3>
                 <p className="text-muted-foreground">
-                  Yes, we understand that each market has unique characteristics. Our support programs can be tailored
-                  to address specific regional needs and challenges. Discuss your requirements with your regional
-                  support manager.
+                  Yes, we understand that each market has unique
+                  characteristics. Our support programs can be tailored to
+                  address specific regional needs and challenges. Discuss your
+                  requirements with your regional support manager.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="font-bold text-lg mb-2">How do I access the marketing assets and materials?</h3>
+                <h3 className="font-bold text-lg mb-2">
+                  How do I access the marketing assets and materials?
+                </h3>
                 <p className="text-muted-foreground">
-                  All marketing assets and materials are available through our partner portal. You&apos;ll receive login
-                  credentials during the onboarding process, giving you access to our comprehensive digital asset
-                  management system.
+                  All marketing assets and materials are available through our
+                  partner portal. You&apos;ll receive login credentials during
+                  the onboarding process, giving you access to our comprehensive
+                  digital asset management system.
                 </p>
               </div>
             </div>
@@ -1161,7 +1304,9 @@ export default function SupportPage2() {
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div>
-                <h2 className="text-3xl font-bold mb-6">Contact Our Support Team</h2>
+                <h2 className="text-3xl font-bold mb-6">
+                  Contact Our Support Team
+                </h2>
                 <p className="text-muted-foreground mb-8">
                   Have questions about our business support programs? Our dedicated team is here to help you explore how
                   we can support your Enfield Empire business.
@@ -1184,13 +1329,15 @@ export default function SupportPage2() {
                     </div>
                     <div>
                       <h3 className="font-bold mb-1">Email Support</h3>
-                      <p className="text-muted-foreground">support@royalenfield-global.com</p>
+                      <p className="text-muted-foreground">{BUSINESS_EMAIL}</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow-md">
-                  <h3 className="font-bold text-lg mb-4">Regional Support Centers</h3>
+                  <h3 className="font-bold text-lg mb-4">
+                    Regional Support Centers
+                  </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <h4 className="font-bold">North America</h4>
@@ -1241,7 +1388,10 @@ export default function SupportPage2() {
                 <form className="space-y-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <label htmlFor="first-name" className="text-sm font-medium">
+                      <label
+                        htmlFor="first-name"
+                        className="text-sm font-medium"
+                      >
                         First Name
                       </label>
                       <input
@@ -1251,7 +1401,10 @@ export default function SupportPage2() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="last-name" className="text-sm font-medium">
+                      <label
+                        htmlFor="last-name"
+                        className="text-sm font-medium"
+                      >
                         Last Name
                       </label>
                       <input
@@ -1283,7 +1436,10 @@ export default function SupportPage2() {
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="support-type" className="text-sm font-medium">
+                    <label
+                      htmlFor="support-type"
+                      className="text-sm font-medium"
+                    >
                       Support Type
                     </label>
                     <select
@@ -1294,7 +1450,9 @@ export default function SupportPage2() {
                       <option value="business-setup">Business Setup</option>
                       <option value="staff-training">Staff Training</option>
                       <option value="marketing">Marketing Support</option>
-                      <option value="supply-chain">Supply Chain Management</option>
+                      <option value="supply-chain">
+                        Supply Chain Management
+                      </option>
                       <option value="financial">Financial Guidance</option>
                       <option value="community">Community Building</option>
                       <option value="other">Other</option>
@@ -1326,11 +1484,15 @@ export default function SupportPage2() {
             <div>
               <h3 className="text-xl font-bold mb-4">Enfield Empire Business</h3>
               <p className="text-gray-400 mb-4">
-                Your gateway to partnership opportunities with the world&apos;s oldest motorcycle brand in continuous
-                production.
+                Your gateway to partnership opportunities with the world&apos;s
+                oldest motorcycle brand in continuous production.
               </p>
               <div className="flex space-x-4">
-                <Link href="#" className="text-gray-400 hover:text-white" aria-label="Facebook">
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white"
+                  aria-label="Facebook"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -1346,7 +1508,11 @@ export default function SupportPage2() {
                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                   </svg>
                 </Link>
-                <Link href="#" className="text-gray-400 hover:text-white" aria-label="Instagram">
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white"
+                  aria-label="Instagram"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -1364,7 +1530,11 @@ export default function SupportPage2() {
                     <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                   </svg>
                 </Link>
-                <Link href="#" className="text-gray-400 hover:text-white" aria-label="Youtube">
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white"
+                  aria-label="Youtube"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -1381,7 +1551,11 @@ export default function SupportPage2() {
                     <path d="m10 15 5-3-5-3z" />
                   </svg>
                 </Link>
-                <Link href="#" className="text-gray-400 hover:text-white" aria-label="Twitter">
+                <Link
+                  href="#"
+                  className="text-gray-400 hover:text-white"
+                  aria-label="Twitter"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -1409,22 +1583,34 @@ export default function SupportPage2() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#opportunities" className="text-gray-400 hover:text-white">
+                  <Link
+                    href="/#opportunities"
+                    className="text-gray-400 hover:text-white"
+                  >
                     Partnership Opportunities
                   </Link>
                 </li>
                 <li>
-                  <Link href="/support" className="text-gray-400 hover:text-white">
+                  <Link
+                    href="/support"
+                    className="text-gray-400 hover:text-white"
+                  >
                     Business Support
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#about" className="text-gray-400 hover:text-white">
+                  <Link
+                    href="/#about"
+                    className="text-gray-400 hover:text-white"
+                  >
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#contact" className="text-gray-400 hover:text-white">
+                  <Link
+                    href="/#contact"
+                    className="text-gray-400 hover:text-white"
+                  >
                     Contact
                   </Link>
                 </li>
@@ -1435,32 +1621,50 @@ export default function SupportPage2() {
               <h3 className="text-xl font-bold mb-4">Support Programs</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#business-setup" className="text-gray-400 hover:text-white">
+                  <Link
+                    href="#business-setup"
+                    className="text-gray-400 hover:text-white"
+                  >
                     Business Setup
                   </Link>
                 </li>
                 <li>
-                  <Link href="#staff-training" className="text-gray-400 hover:text-white">
+                  <Link
+                    href="#staff-training"
+                    className="text-gray-400 hover:text-white"
+                  >
                     Staff Training
                   </Link>
                 </li>
                 <li>
-                  <Link href="#marketing-support" className="text-gray-400 hover:text-white">
+                  <Link
+                    href="#marketing-support"
+                    className="text-gray-400 hover:text-white"
+                  >
                     Marketing Support
                   </Link>
                 </li>
                 <li>
-                  <Link href="#supply-chain" className="text-gray-400 hover:text-white">
+                  <Link
+                    href="#supply-chain"
+                    className="text-gray-400 hover:text-white"
+                  >
                     Supply Chain Management
                   </Link>
                 </li>
                 <li>
-                  <Link href="#financial-guidance" className="text-gray-400 hover:text-white">
+                  <Link
+                    href="#financial-guidance"
+                    className="text-gray-400 hover:text-white"
+                  >
                     Financial Guidance
                   </Link>
                 </li>
                 <li>
-                  <Link href="#community-building" className="text-gray-400 hover:text-white">
+                  <Link
+                    href="#community-building"
+                    className="text-gray-400 hover:text-white"
+                  >
                     Community Building
                   </Link>
                 </li>
@@ -1541,7 +1745,9 @@ Chennai, Tamil Nadu 600119</span>
                     <circle cx="12" cy="12" r="10" />
                     <polyline points="12 6 12 12 16 14" />
                   </svg>
-                  <span className="text-gray-400">Mon-Fri: 9AM-6PM, Sat: 10AM-4PM</span>
+                  <span className="text-gray-400">
+                    Mon-Fri: 9AM-6PM, Sat: 10AM-4PM
+                  </span>
                 </li>
               </ul>
             </div>
@@ -1562,5 +1768,5 @@ Chennai, Tamil Nadu 600119</span>
         </div>
       </footer>
     </div>
-  )
+  );
 }
