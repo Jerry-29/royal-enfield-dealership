@@ -12,10 +12,17 @@ import {
   Phone,
   Mail,
   Download,
-} from "lucide-react"
-import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { BecomePartner } from "../become-partner"
+} from "lucide-react";
+import {
+  Card,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { BecomePartner } from "../become-partner";
+import { BUSINESS_EMAIL } from "@/config/constants";
 
 export default function SupportPage2() {
   return (
@@ -26,11 +33,21 @@ export default function SupportPage2() {
           <div className="flex items-center space-x-4 text-sm">
             <div className="flex items-center">
               <Phone className="h-4 w-4 mr-2" />
-              <span>+91 9693894599</span>
+              <a
+                href="tel:+919693894599"
+                className="hover:text-primary cursor-pointer"
+              >
+                +91 9693894599
+              </a>
             </div>
             <div className="flex items-center">
               <Mail className="h-4 w-4 mr-2" />
-              <span>business@enfieldempire.com</span>
+              <a
+                href={`mailto:${BUSINESS_EMAIL}?subject=Enfield Empire Business Partnership Inquiry`}
+                className="hover:text-primary cursor-pointer"
+              >
+                {BUSINESS_EMAIL}
+              </a>
             </div>
           </div>
           <div className="flex space-x-3">
@@ -110,7 +127,9 @@ export default function SupportPage2() {
         <div className="container flex justify-between items-center py-4">
           <Link href="/" className="flex items-center">
             <span className="text-2xl font-bold">ENFIELD EMPIRE</span>
-            <span className="ml-2 text-sm uppercase tracking-widest">Business Partnerships</span>
+            <span className="ml-2 text-sm uppercase tracking-widest">
+              Business Partnerships
+            </span>
           </Link>
           <nav className="hidden md:flex space-x-8">
             <Link href="/" className="font-medium hover:text-primary">
@@ -132,7 +151,7 @@ export default function SupportPage2() {
               Contact
             </Link>
           </nav>
-          <BecomePartner/>
+          <BecomePartner />
           <Button variant="outline" className="md:hidden">
             Menu
           </Button>
@@ -156,7 +175,8 @@ export default function SupportPage2() {
                   Comprehensive Business Support
                 </h1>
                 <p className="text-xl mb-8">
-                  We provide extensive support to ensure your Enfield Empire business thrives from day one.
+                  We provide extensive support to ensure your Enfield Empire
+                  business thrives from day one.
                 </p>
                 <Button size="lg" className="bg-primary hover:bg-primary/90">
                   Request Support
@@ -172,8 +192,10 @@ export default function SupportPage2() {
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold mb-4">Our Support Framework</h2>
               <p className="text-muted-foreground max-w-3xl mx-auto">
-                At Enfield Empire, we believe in building long-term partnerships. Our comprehensive support system is
-                designed to help you establish, grow, and sustain a successful Enfield Empire business in your market.
+                At Enfield Empire, we believe in building long-term
+                partnerships. Our comprehensive support system is designed to
+                help you establish, grow, and sustain a successful Enfield
+                Empire business in your market.
               </p>
             </div>
 
@@ -295,8 +317,9 @@ export default function SupportPage2() {
                   </div>
                   <CardTitle>Community Building</CardTitle>
                   <CardDescription className="text-base">
-                    Support for building and engaging with the local Enfield Empire rider community through events,
-                    rides, and exclusive experiences.
+                    Support for building and engaging with the local Enfield
+                    Empire rider community through events, rides, and exclusive
+                    experiences.
                   </CardDescription>
                 </CardHeader>
                 <CardFooter>
@@ -332,9 +355,10 @@ export default function SupportPage2() {
                 </div>
                 <h2 className="text-3xl font-bold mb-6">Business Setup</h2>
                 <p className="text-muted-foreground mb-6">
-                  Our business setup support is designed to help you establish a successful Enfield Empire business from
-                  the ground up. We provide comprehensive guidance on every aspect of setting up your dealership,
-                  distribution center, or studio store.
+                  Our business setup support is designed to help you establish a
+                  successful Enfield Empire business from the ground up. We
+                  provide comprehensive guidance on every aspect of setting up
+                  your dealership, distribution center, or studio store.
                 </p>
 
                 <div className="space-y-4 mb-8">
@@ -359,8 +383,9 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">Showroom Design</h3>
                       <p className="text-muted-foreground">
-                        Detailed design guidelines and support for creating an authentic Enfield Empire retail experience
-                        that reflects our brand heritage.
+                        Detailed design guidelines and support for creating an
+                        authentic Enfield Empire retail experience that reflects
+                        our brand heritage.
                       </p>
                     </div>
                   </div>
@@ -386,7 +411,8 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">Technology Integration</h3>
                       <p className="text-muted-foreground">
-                        Implementation of Enfield Empire&apos;s dealer management system and digital tools for efficient
+                        Implementation of Enfield Empire&apos;s dealer
+                        management system and digital tools for efficient
                         business operations.
                       </p>
                     </div>
@@ -413,9 +439,10 @@ export default function SupportPage2() {
                 </div>
                 <h2 className="text-3xl font-bold mb-6">Staff Training</h2>
                 <p className="text-muted-foreground mb-6">
-                  Our comprehensive training programs ensure that your team has the knowledge, skills, and passion to
-                  deliver an exceptional Enfield Empire experience to customers. We offer specialized training for
-                  different roles within your business.
+                  Our comprehensive training programs ensure that your team has
+                  the knowledge, skills, and passion to deliver an exceptional
+                  Enfield Empire experience to customers. We offer specialized
+                  training for different roles within your business.
                 </p>
 
                 <Tabs defaultValue="sales" className="mb-8">
@@ -434,8 +461,8 @@ export default function SupportPage2() {
                       <div>
                         <h3 className="font-bold">Product Knowledge</h3>
                         <p className="text-muted-foreground">
-                          In-depth training on Enfield Empire motorcycle models, features, technologies, and unique
-                          selling points.
+                          In-depth training on Enfield Empire motorcycle models,
+                          features, technologies, and unique selling points.
                         </p>
                       </div>
                     </div>
@@ -447,8 +474,9 @@ export default function SupportPage2() {
                       <div>
                         <h3 className="font-bold">Sales Techniques</h3>
                         <p className="text-muted-foreground">
-                          Customer engagement strategies, needs assessment, and effective demonstration techniques
-                          specific to Enfield Empire products.
+                          Customer engagement strategies, needs assessment, and
+                          effective demonstration techniques specific to Enfield
+                          Empire products.
                         </p>
                       </div>
                     </div>
@@ -460,8 +488,9 @@ export default function SupportPage2() {
                       <div>
                         <h3 className="font-bold">Accessory & Apparel Sales</h3>
                         <p className="text-muted-foreground">
-                          Training on Enfield Empire&apos;s genuine accessories and apparel lines to maximize additional
-                          revenue streams.
+                          Training on Enfield Empire&apos;s genuine accessories
+                          and apparel lines to maximize additional revenue
+                          streams.
                         </p>
                       </div>
                     </div>
@@ -475,7 +504,8 @@ export default function SupportPage2() {
                       <div>
                         <h3 className="font-bold">Technical Training</h3>
                         <p className="text-muted-foreground">
-                          Hands-on technical training for service technicians on all Enfield Empire motorcycle models.
+                          Hands-on technical training for service technicians on
+                          all Enfield Empire motorcycle models.
                         </p>
                       </div>
                     </div>
@@ -487,8 +517,9 @@ export default function SupportPage2() {
                       <div>
                         <h3 className="font-bold">Diagnostic Procedures</h3>
                         <p className="text-muted-foreground">
-                          Training on Enfield Empire&apos;s diagnostic tools and troubleshooting procedures for efficient
-                          service operations.
+                          Training on Enfield Empire&apos;s diagnostic tools and
+                          troubleshooting procedures for efficient service
+                          operations.
                         </p>
                       </div>
                     </div>
@@ -589,8 +620,10 @@ export default function SupportPage2() {
                 </div>
                 <h2 className="text-3xl font-bold mb-6">Marketing Support</h2>
                 <p className="text-muted-foreground mb-6">
-                  Our marketing support program provides you with the tools, assets, and strategies to effectively
-                  promote Enfield Empire in your market and drive customer acquisition for your business.
+                  Our marketing support program provides you with the tools,
+                  assets, and strategies to effectively promote Enfield Empire
+                  in your market and drive customer acquisition for your
+                  business.
                 </p>
 
                 <div className="space-y-4 mb-8">
@@ -601,8 +634,9 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">Brand Assets</h3>
                       <p className="text-muted-foreground">
-                        Access to Enfield Empire&apos;s global marketing assets, including high-quality images, videos, and
-                        promotional materials.
+                        Access to Enfield Empire&apos;s global marketing assets,
+                        including high-quality images, videos, and promotional
+                        materials.
                       </p>
                     </div>
                   </div>
@@ -710,7 +744,8 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">Parts & Accessories</h3>
                       <p className="text-muted-foreground">
-                        Regular supply of genuine Enfield Empire parts and accessories to support after-sales service and
+                        Regular supply of genuine Enfield Empire parts and
+                        accessories to support after-sales service and
                         additional revenue streams.
                       </p>
                     </div>
@@ -854,8 +889,9 @@ export default function SupportPage2() {
                 </div>
                 <h2 className="text-3xl font-bold mb-6">Community Building</h2>
                 <p className="text-muted-foreground mb-6">
-                  Our community building support helps you create and nurture a vibrant local Enfield Empire rider
-                  community, fostering brand loyalty and creating additional business opportunities.
+                  Our community building support helps you create and nurture a
+                  vibrant local Enfield Empire rider community, fostering brand
+                  loyalty and creating additional business opportunities.
                 </p>
 
                 <div className="space-y-4 mb-8">
@@ -866,8 +902,9 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">Rider Events</h3>
                       <p className="text-muted-foreground">
-                        Support for organizing and promoting local rides, meetups, and events for Enfield Empire owners
-                        and enthusiasts.
+                        Support for organizing and promoting local rides,
+                        meetups, and events for Enfield Empire owners and
+                        enthusiasts.
                       </p>
                     </div>
                   </div>
@@ -879,8 +916,8 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">Rider Clubs</h3>
                       <p className="text-muted-foreground">
-                        Guidelines and support for establishing and growing official Enfield Empire rider clubs in your
-                        region.
+                        Guidelines and support for establishing and growing
+                        official Enfield Empire rider clubs in your region.
                       </p>
                     </div>
                   </div>
@@ -892,8 +929,8 @@ export default function SupportPage2() {
                     <div>
                       <h3 className="font-bold">Exclusive Experiences</h3>
                       <p className="text-muted-foreground">
-                        Access to Enfield Empire&apos;s global riding programs and exclusive experiences to offer to your
-                        customers.
+                        Access to Enfield Empire&apos;s global riding programs
+                        and exclusive experiences to offer to your customers.
                       </p>
                     </div>
                   </div>
@@ -1000,7 +1037,8 @@ export default function SupportPage2() {
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold mb-4">Partner Testimonials</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Hear from our partners about their experience with Enfield Empire&apos;s business support programs.
+                Hear from our partners about their experience with Enfield
+                Empire&apos;s business support programs.
               </p>
             </div>
 
@@ -1021,9 +1059,11 @@ export default function SupportPage2() {
                   </div>
                 </div>
                 <p className="italic text-muted-foreground mb-4">
-                  &quot;The business support from Enfield Empire has been exceptional. From the initial setup to ongoing
-                  marketing and training, they&apos;ve been with us every step of the way. It&apos;s truly a partnership, not just
-                  a business relationship.&quot;
+                  &quot;The business support from Enfield Empire has been
+                  exceptional. From the initial setup to ongoing marketing and
+                  training, they&apos;ve been with us every step of the way.
+                  It&apos;s truly a partnership, not just a business
+                  relationship.&quot;
                 </p>
                 <div className="flex text-yellow-400">
                   <svg
@@ -1085,8 +1125,10 @@ export default function SupportPage2() {
                   </div>
                 </div>
                 <p className="italic text-muted-foreground mb-4">
-                  &quot;The financial guidance and supply chain management support from Enfield Empire has been instrumental
-                  in our success. Their team helped us optimize our operations and maximize profitability from day one.&quot;
+                  &quot;The financial guidance and supply chain management
+                  support from Enfield Empire has been instrumental in our
+                  success. Their team helped us optimize our operations and
+                  maximize profitability from day one.&quot;
                 </p>
                 <div className="flex text-yellow-400">
                   <svg
@@ -1207,14 +1249,19 @@ export default function SupportPage2() {
               Ready to Access Our Business Support?
             </h2>
             <p className="text-gray-300 max-w-2xl mx-auto mb-8">
-              Whether you&apos;re an existing partner or considering a Enfield Empire business opportunity, our comprehensive
-              support programs are designed to help you succeed.
+              Whether you&apos;re an existing partner or considering a Enfield
+              Empire business opportunity, our comprehensive support programs
+              are designed to help you succeed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-primary hover:bg-primary/90">
                 Request Support
               </Button>
-              <Button size="lg" variant="outline" className="text-black border-white hover:bg-black/4">
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-black border-white hover:bg-black/4"
+              >
                 Partner Portal Login
               </Button>
             </div>
@@ -1308,8 +1355,9 @@ export default function SupportPage2() {
                   Contact Our Support Team
                 </h2>
                 <p className="text-muted-foreground mb-8">
-                  Have questions about our business support programs? Our dedicated team is here to help you explore how
-                  we can support your Enfield Empire business.
+                  Have questions about our business support programs? Our
+                  dedicated team is here to help you explore how we can support
+                  your Enfield Empire business.
                 </p>
 
                 <div className="space-y-6 mb-8">
@@ -1329,7 +1377,12 @@ export default function SupportPage2() {
                     </div>
                     <div>
                       <h3 className="font-bold mb-1">Email Support</h3>
-                      <p className="text-muted-foreground">{BUSINESS_EMAIL}</p>
+                      <a
+                        href={`mailto:${BUSINESS_EMAIL}?subject=Enfield Empire Support Request`}
+                        className="text-muted-foreground hover:text-primary cursor-pointer"
+                      >
+                        {BUSINESS_EMAIL}
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1482,7 +1535,9 @@ export default function SupportPage2() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Enfield Empire Business</h3>
+              <h3 className="text-xl font-bold mb-4">
+                Enfield Empire Business
+              </h3>
               <p className="text-gray-400 mb-4">
                 Your gateway to partnership opportunities with the world&apos;s
                 oldest motorcycle brand in continuous production.
@@ -1690,9 +1745,11 @@ export default function SupportPage2() {
                     <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
                     <circle cx="12" cy="10" r="3" />
                   </svg>
-                  <span className="text-gray-400">Main Block , Royan Enfield Tech Center ,
-296 , Rajiv Gandhi Salai , Elcot Sez, Sholinganahllur,
-Chennai, Tamil Nadu 600119</span>
+                  <span className="text-gray-400">
+                    Main Block , Royan Enfield Tech Center , 296 , Rajiv Gandhi
+                    Salai , Elcot Sez, Sholinganahllur, Chennai, Tamil Nadu
+                    600119
+                  </span>
                 </li>
                 <li className="flex items-center">
                   <svg
@@ -1709,7 +1766,12 @@ Chennai, Tamil Nadu 600119</span>
                   >
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                   </svg>
-                  <span className="text-gray-400">+91 9693894599</span>
+                  <a
+                    href="tel:+919693894599"
+                    className="text-gray-400 hover:text-white cursor-pointer"
+                  >
+                    +91 9693894599
+                  </a>
                 </li>
                 <li className="flex items-center">
                   <svg
@@ -1727,7 +1789,12 @@ Chennai, Tamil Nadu 600119</span>
                     <rect width="20" height="16" x="2" y="4" rx="2" />
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                   </svg>
-                  <span className="text-gray-400">business@enfieldempire.com</span>
+                  <a
+                    href={`mailto:${BUSINESS_EMAIL}?subject=Enfield Empire Business Inquiry`}
+                    className="text-gray-400 hover:text-white cursor-pointer"
+                  >
+                    {BUSINESS_EMAIL}
+                  </a>
                 </li>
                 <li className="flex items-center">
                   <svg
@@ -1754,7 +1821,10 @@ Chennai, Tamil Nadu 600119</span>
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; {new Date().getFullYear()} Enfield Empire Business Partnerships. All rights reserved.</p>
+            <p>
+              &copy; {new Date().getFullYear()} Enfield Empire Business
+              Partnerships. All rights reserved.
+            </p>
             <p className="mt-2">
               <Link href="#" className="hover:text-white">
                 Privacy Policy

@@ -21,6 +21,7 @@ import { DownloProfile } from "@/components/profile-download";
 import { LearnMore } from "@/components/learn-more";
 import { BecomePartner } from "@/components/become-partner";
 import { ExploreOpportunity } from "@/components/explore-opprtunity";
+import { BUSINESS_EMAIL } from "@/config/constants";
 
 export const metadata: Metadata = homeMetadata;
 
@@ -34,11 +35,23 @@ export default function Home() {
           <div className="flex items-center space-x-4 text-sm">
             <div className="flex items-center">
               <Phone className="h-4 w-4 mr-2" />
-              <span>+91 9693894599</span>
+              <span>
+                <a
+                  href="tel:+919693894599"
+                  className="hover:text-primary cursor-pointer"
+                >
+                  +91 9693894599{" "}
+                </a>
+              </span>
             </div>
             <div className="flex items-center">
               <Mail className="h-4 w-4 mr-2" />
-              <span>business@enfieldempire.com</span>
+              <a
+                href={`mailto:${BUSINESS_EMAIL}?subject=Enfield Empire Business Partnership Inquiry`}
+                className="hover:text-primary cursor-pointer"
+              >
+                {BUSINESS_EMAIL}
+              </a>
             </div>
           </div>
           <div className="flex space-x-3">
