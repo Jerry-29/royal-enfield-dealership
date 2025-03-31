@@ -109,7 +109,7 @@ export default function Home() {
 
       <main>
         {/* Hero Section */}
-        <section className="relative h-[80vh] bg-black ">
+        <section className="relative h-[80vh] bg-black">
           <Image
             src="/hero-section/image1.png"
             alt="Enfield Empire Motorcycle"
@@ -117,7 +117,7 @@ export default function Home() {
             className="object-cover opacity-70"
             priority
           />
-          <div className="absolute inset-0 flex items-center flex justify-center">
+          <div className="absolute inset-0 flex items-center justify-center px-4">
             <div className="container">
               <div className="max-w-xl text-white">
                 <h1 className="text-5xl font-bold mb-4">
@@ -132,9 +132,9 @@ export default function Home() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="text-black border-white hover:bg-white/10"
+                    className="bg-white text-black hover:bg-white/90"
                   >
-                    Apply Now
+                    <a href="#contact">Apply Now</a>
                   </Button>
                 </div>
               </div>
@@ -872,14 +872,17 @@ export default function Home() {
         <ContactUs />
 
         {/* Map Section */}
-        <section className="h-[500px] relative flex justify-center">
+        <section className="hidden md:block h-[500px] relative flex justify-center">
           <div className="absolute inset-0 bg-muted flex items-center justify-center">
             <DealershipMap />
           </div>
         </section>
       </main>
 
-      <footer className="bg-black text-white py-12 flex justify-center">
+      <footer
+        className=" bg-black text-white py-12 flex justify-center "
+        style={{ padding: "0px 16px" }}
+      >
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
