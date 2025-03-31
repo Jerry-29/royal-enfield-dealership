@@ -96,7 +96,7 @@ export const ContactUs = () => {
               Contact Our Partnership Team
             </h2>
             <p className="text-muted-foreground mb-8">
-              Have questions about becoming a Royal Enfield business partner?
+              Have questions about becoming a Enfield Empire business partner?
               Our dedicated team is here to help you explore the opportunities.
             </p>
 
@@ -108,7 +108,9 @@ export const ContactUs = () => {
                 <div>
                   <h3 className="font-bold mb-1">Global Headquarters</h3>
                   <p className="text-muted-foreground">
-                    123 Business Avenue, Corporate Park, CP 12345
+                    Main Block , Royan Enfield Tech Center ,
+296 , Rajiv Gandhi Salai , Elcot Sez, Sholinganahllur,
+Chennai, Tamil Nadu 600119
                   </p>
                 </div>
               </div>
@@ -119,7 +121,7 @@ export const ContactUs = () => {
                 </div>
                 <div>
                   <h3 className="font-bold mb-1">Partnership Hotline</h3>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  <p className="text-muted-foreground">+91 9693894599</p>
                 </div>
               </div>
 
@@ -130,7 +132,7 @@ export const ContactUs = () => {
                 <div>
                   <h3 className="font-bold mb-1">Email Us</h3>
                   <p className="text-muted-foreground">
-                    partnerships@royalenfield-global.com
+                    business@enfieldempire.com
                   </p>
                 </div>
               </div>
@@ -275,7 +277,7 @@ export const ContactUs = () => {
                   className={`flex h-10 w-full rounded-md border ${
                     errors.phone ? "border-red-500" : "border-input"
                   } bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50`}
-                  placeholder="+1 (555) 123-4567"
+                  placeholder="+91 9693894599"
                 />
                 {errors.phone && (
                   <p className="text-red-500 text-sm">{errors.phone.message}</p>
@@ -337,7 +339,7 @@ export const ContactUs = () => {
                   className={`flex min-h-[120px] w-full rounded-md border ${
                     errors.message ? "border-red-500" : "border-input"
                   } bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50`}
-                  placeholder="Tell us about your business experience, investment capacity, and why you're interested in partnering with Royal Enfield..."
+                  placeholder="Tell us about your business experience, investment capacity, and why you're interested in partnering with Enfield Empire..."
                 />
                 {errors.message && (
                   <p className="text-red-500 text-sm">

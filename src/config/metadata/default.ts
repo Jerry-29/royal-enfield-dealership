@@ -3,12 +3,12 @@ import { Metadata } from 'next'
 export const defaultMetadata: Metadata = {
   metadataBase: new URL('https://royalenfield-dealership.com'),
   title: {
-    default: 'Royal Enfield Dealership',
-    template: '%s | Royal Enfield Dealership'
+    default: 'Enfield Empire Dealership',
+    template: '%s | Enfield Empire Dealership'
   },
-  description: 'Partner with Royal Enfield to start your dealership journey. Exclusive motorcycle dealership opportunities across global locations.',
+  description: 'Partner with Enfield Empire to start your dealership journey. Exclusive motorcycle dealership opportunities across global locations.',
   keywords: [
-    'Royal Enfield',
+    'Enfield Empire',
     'motorcycle dealership',
     'business opportunity',
     'franchise',
@@ -17,12 +17,12 @@ export const defaultMetadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    siteName: 'Royal Enfield Dealership',
+    siteName: 'Enfield Empire Dealership',
     images: [{
       url: '/images/og-default.jpg',
       width: 1200,
       height: 630,
-      alt: 'Royal Enfield Dealership'
+      alt: 'Enfield Empire Dealership'
     }]
   },
   twitter: {

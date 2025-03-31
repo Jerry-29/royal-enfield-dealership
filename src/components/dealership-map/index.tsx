@@ -33,7 +33,7 @@ const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), {
 const dealerships = [
   {
     id: 1,
-    name: "Royal Enfield London",
+    name: "Enfield Empire London",
     address: "49-51 Goodge St, London",
     lat: 51.5207,
     lng: -0.1357,
@@ -44,7 +44,7 @@ const dealerships = [
   },
   {
     id: 2,
-    name: "Royal Enfield Delhi",
+    name: "Enfield Empire Delhi",
     address: "M-72, Greater Kailash Part 1, New Delhi",
     lat: 28.5513,
     lng: 77.2373,
@@ -55,7 +55,7 @@ const dealerships = [
   },
   {
     id: 3,
-    name: "Royal Enfield Milwaukee",
+    name: "Enfield Empire Milwaukee",
     address: "226 N Water St, Milwaukee, WI",
     lat: 43.0321,
     lng: -87.9093,
@@ -66,7 +66,7 @@ const dealerships = [
   },
   {
     id: 4,
-    name: "Royal Enfield Sydney",
+    name: "Enfield Empire Sydney",
     address: "562 Parramatta Rd, Petersham NSW",
     lat: -33.8888,
     lng: 151.1571,
@@ -77,7 +77,7 @@ const dealerships = [
   },
   {
     id: 5,
-    name: "Royal Enfield Bangkok",
+    name: "Enfield Empire Bangkok",
     address: "999/1 Rama I Rd, Pathum Wan",
     lat: 13.7463,
     lng: 100.5340,

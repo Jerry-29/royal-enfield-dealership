@@ -2,7 +2,7 @@ export default function JsonLd() {
     const schema = {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Royal Enfield Dealership",
+      "name": "Enfield Empire Dealership",
       "url": "https://royalenfield-dealership.com",
       "logo": "https://royalenfield-dealership.com/logo.png",
       "contactPoint": {

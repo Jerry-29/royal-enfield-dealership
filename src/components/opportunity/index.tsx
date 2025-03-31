@@ -5,6 +5,7 @@ import { Phone, Mail, ChevronRight, ArrowRight, Check, Download, Globe, Store, W
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Badge } from "@/components/ui/badge"
+import { BecomePartner } from "../become-partner"
 
 export default function OpportunitiesPage() {
   return (
@@ -15,11 +16,11 @@ export default function OpportunitiesPage() {
           <div className="flex items-center space-x-4 text-sm">
             <div className="flex items-center">
               <Phone className="h-4 w-4 mr-2" />
-              <span>+1 (555) 123-4567</span>
+              <span>+91 9693894599</span>
             </div>
             <div className="flex items-center">
               <Mail className="h-4 w-4 mr-2" />
-              <span>partnerships@royalenfield-global.com</span>
+              <span>business@enfieldempire.com</span>
             </div>
           </div>
           <div className="flex space-x-3">
@@ -98,7 +99,7 @@ export default function OpportunitiesPage() {
       <header className="bg-white sticky top-0 z-10 shadow-sm flex justify-center">
         <div className="container flex justify-between items-center py-4">
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold">ROYAL ENFIELD</span>
+            <span className="text-2xl font-bold">ENFIELD EMPIRE</span>
             <span className="ml-2 text-sm uppercase tracking-widest">Business Partnerships</span>
           </Link>
           <nav className="hidden md:flex space-x-8">
@@ -118,7 +119,7 @@ export default function OpportunitiesPage() {
               Contact
             </Link>
           </nav>
-          <Button className="hidden md:inline-flex">Become a Partner</Button>
+          <BecomePartner/>
           <Button variant="outline" className="md:hidden">
             Menu
           </Button>
@@ -130,7 +131,7 @@ export default function OpportunitiesPage() {
         <section className="relative h-[60vh] bg-black flex justify-center">
           <Image
             src="/hero-section/image1.png"
-            alt="Royal Enfield Partnership Opportunities"
+            alt="Enfield Empire Partnership Opportunities"
             fill
             className="object-cover opacity-70"
             priority
@@ -140,14 +141,14 @@ export default function OpportunitiesPage() {
               <div className="max-w-2xl text-white">
                 <h1 className="text-5xl font-bold mb-4">Partnership Opportunities</h1>
                 <p className="text-xl mb-8">
-                  Join the Royal Enfield family with multiple business partnership models designed to suit different
+                  Join the Enfield Empire family with multiple business partnership models designed to suit different
                   markets and investment capabilities.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
                     Explore Models
                   </Button>
-                  <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+                  <Button size="lg" variant="outline" className="text-black border-white hover:bg-white/4">
                     Apply Now
                   </Button>
                 </div>
@@ -162,7 +163,7 @@ export default function OpportunitiesPage() {
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold mb-4">Find Your Perfect Partnership Model</h2>
               <p className="text-muted-foreground max-w-3xl mx-auto">
-                Royal Enfield offers a range of partnership models to suit different markets, investment capabilities,
+                Enfield Empire offers a range of partnership models to suit different markets, investment capabilities,
                 and business goals. Explore our options to find the perfect fit for your entrepreneurial journey.
               </p>
             </div>
@@ -176,7 +177,7 @@ export default function OpportunitiesPage() {
                   </div>
                   <CardTitle>Exclusive Dealership</CardTitle>
                   <CardDescription className="text-base">
-                    Become an exclusive Royal Enfield dealer with sales, service, and spare parts operations in your
+                    Become an exclusive Enfield Empire dealer with sales, service, and spare parts operations in your
                     territory.
                   </CardDescription>
                 </CardHeader>
@@ -197,7 +198,7 @@ export default function OpportunitiesPage() {
                   </div>
                   <CardTitle>Regional Distribution</CardTitle>
                   <CardDescription className="text-base">
-                    Distribute Royal Enfield motorcycles, accessories, and parts to a network of dealers in your region.
+                    Distribute Enfield Empire motorcycles, accessories, and parts to a network of dealers in your region.
                   </CardDescription>
                 </CardHeader>
                 <CardFooter>
@@ -217,7 +218,7 @@ export default function OpportunitiesPage() {
                   </div>
                   <CardTitle>Studio Store</CardTitle>
                   <CardDescription className="text-base">
-                    Open a compact Royal Enfield showroom in premium urban locations with lower investment requirements.
+                    Open a compact Enfield Empire showroom in premium urban locations with lower investment requirements.
                   </CardDescription>
                 </CardHeader>
                 <CardFooter>
@@ -237,7 +238,7 @@ export default function OpportunitiesPage() {
                   </div>
                   <CardTitle>Service Center</CardTitle>
                   <CardDescription className="text-base">
-                    Establish a dedicated Royal Enfield service center with genuine parts and accessories sales.
+                    Establish a dedicated Enfield Empire service center with genuine parts and accessories sales.
                   </CardDescription>
                 </CardHeader>
                 <CardFooter>
@@ -396,7 +397,7 @@ export default function OpportunitiesPage() {
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Image
                   src="/bikes/bike1.png"
-                  alt="Royal Enfield Dealership"
+                  alt="Enfield Empire Dealership"
                   fill
                   className="object-cover"
                 />
@@ -413,8 +414,8 @@ export default function OpportunitiesPage() {
                 </div>
 
                 <p className="text-muted-foreground mb-6">
-                  Become an exclusive Royal Enfield dealer with comprehensive sales, service, and spare parts operations
-                  in your territory. This is our most comprehensive partnership model, offering the full Royal Enfield
+                  Become an exclusive Enfield Empire dealer with comprehensive sales, service, and spare parts operations
+                  in your territory. This is our most comprehensive partnership model, offering the full Enfield Empire
                   experience to customers in your market.
                 </p>
 
@@ -439,7 +440,7 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Territorial Exclusivity</h3>
                       <p className="text-muted-foreground">
-                        Exclusive rights to sell Royal Enfield motorcycles within your designated territory.
+                        Exclusive rights to sell Enfield Empire motorcycles within your designated territory.
                       </p>
                     </div>
                   </div>
@@ -464,7 +465,7 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Comprehensive Support</h3>
                       <p className="text-muted-foreground">
-                        Full access to Royal Enfield&apos;s business support programs, including setup assistance, staff
+                        Full access to Enfield Empire&apos;s business support programs, including setup assistance, staff
                         training, marketing support, and more.
                       </p>
                     </div>
@@ -519,7 +520,7 @@ export default function OpportunitiesPage() {
                 </div>
 
                 <p className="text-muted-foreground mb-6">
-                  Become a regional distributor for Royal Enfield with exclusive rights to import, distribute, and
+                  Become a regional distributor for Enfield Empire with exclusive rights to import, distribute, and
                   develop a network of dealers in your region. This high-level partnership is ideal for established
                   business groups with distribution experience.
                 </p>
@@ -532,7 +533,7 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Regional Exclusivity</h3>
                       <p className="text-muted-foreground">
-                        Exclusive rights to import and distribute Royal Enfield motorcycles, parts, and accessories in
+                        Exclusive rights to import and distribute Enfield Empire motorcycles, parts, and accessories in
                         your region.
                       </p>
                     </div>
@@ -545,7 +546,7 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Dealer Network Development</h3>
                       <p className="text-muted-foreground">
-                        Build and manage a network of Royal Enfield dealers within your territory, creating a scalable
+                        Build and manage a network of Enfield Empire dealers within your territory, creating a scalable
                         business model.
                       </p>
                     </div>
@@ -558,7 +559,7 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Supply Chain Management</h3>
                       <p className="text-muted-foreground">
-                        Direct import relationship with Royal Enfield&apos;s manufacturing facilities, with optimized
+                        Direct import relationship with Enfield Empire&apos;s manufacturing facilities, with optimized
                         logistics and inventory management.
                       </p>
                     </div>
@@ -571,7 +572,7 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Brand Development</h3>
                       <p className="text-muted-foreground">
-                        Lead Royal Enfield&apos;s brand development and marketing initiatives across your entire region.
+                        Lead Enfield Empire&apos;s brand development and marketing initiatives across your entire region.
                       </p>
                     </div>
                   </div>
@@ -609,7 +610,7 @@ export default function OpportunitiesPage() {
               <div className="relative h-[400px] rounded-lg overflow-hidden order-1 lg:order-2">
                 <Image
                   src="/bikes/bike2.png"
-                  alt="Royal Enfield Distribution"
+                  alt="Enfield Empire Distribution"
                   fill
                   className="object-cover"
                 />
@@ -624,7 +625,7 @@ export default function OpportunitiesPage() {
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Image
                   src="/bikes/bike3.png"
-                  alt="Royal Enfield Studio Store"
+                  alt="Enfield Empire Studio Store"
                   fill
                   className="object-cover"
                 />
@@ -641,7 +642,7 @@ export default function OpportunitiesPage() {
                 </div>
 
                 <p className="text-muted-foreground mb-6">
-                  Open a compact Royal Enfield showroom in premium urban locations with lower investment requirements.
+                  Open a compact Enfield Empire showroom in premium urban locations with lower investment requirements.
                   Studio Stores are designed for high-visibility areas with focused motorcycle displays and essential
                   services.
                 </p>
@@ -654,7 +655,7 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Lower Investment Entry</h3>
                       <p className="text-muted-foreground">
-                        Start your Royal Enfield business with a lower capital investment compared to a full dealership.
+                        Start your Enfield Empire business with a lower capital investment compared to a full dealership.
                       </p>
                     </div>
                   </div>
@@ -679,7 +680,7 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Focused Product Range</h3>
                       <p className="text-muted-foreground">
-                        Display and sell key Royal Enfield models with a curated selection of accessories and apparel.
+                        Display and sell key Enfield Empire models with a curated selection of accessories and apparel.
                       </p>
                     </div>
                   </div>
@@ -746,8 +747,8 @@ export default function OpportunitiesPage() {
                 </div>
 
                 <p className="text-muted-foreground mb-6">
-                  Establish a dedicated Royal Enfield service center with genuine parts and accessories sales. This
-                  model is ideal for automotive service professionals looking to specialize in Royal Enfield
+                  Establish a dedicated Enfield Empire service center with genuine parts and accessories sales. This
+                  model is ideal for automotive service professionals looking to specialize in Enfield Empire
                   motorcycles.
                 </p>
 
@@ -759,7 +760,7 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Lowest Investment Entry</h3>
                       <p className="text-muted-foreground">
-                        Start your Royal Enfield business with the lowest capital investment among our partnership
+                        Start your Enfield Empire business with the lowest capital investment among our partnership
                         models.
                       </p>
                     </div>
@@ -772,7 +773,7 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Technical Expertise</h3>
                       <p className="text-muted-foreground">
-                        Comprehensive technical training and support for servicing all Royal Enfield motorcycle models.
+                        Comprehensive technical training and support for servicing all Enfield Empire motorcycle models.
                       </p>
                     </div>
                   </div>
@@ -784,7 +785,7 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Genuine Parts Business</h3>
                       <p className="text-muted-foreground">
-                        Authorized dealer of genuine Royal Enfield parts and accessories with direct supply chain
+                        Authorized dealer of genuine Enfield Empire parts and accessories with direct supply chain
                         access.
                       </p>
                     </div>
@@ -797,7 +798,7 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Limited Motorcycle Sales</h3>
                       <p className="text-muted-foreground">
-                        Option to sell select Royal Enfield models, with potential to upgrade to a full dealership over
+                        Option to sell select Enfield Empire models, with potential to upgrade to a full dealership over
                         time.
                       </p>
                     </div>
@@ -836,7 +837,7 @@ export default function OpportunitiesPage() {
               <div className="relative h-[400px] rounded-lg overflow-hidden order-1 lg:order-2">
                 <Image
                   src="/bikes/bike4.png"
-                  alt="Royal Enfield Service Center"
+                  alt="Enfield Empire Service Center"
                   fill
                   className="object-cover"
                 />
@@ -851,7 +852,7 @@ export default function OpportunitiesPage() {
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold mb-4">Partnership Application Process</h2>
               <p className="text-muted-foreground max-w-3xl mx-auto">
-                Our streamlined application process is designed to help you become a Royal Enfield business partner
+                Our streamlined application process is designed to help you become a Enfield Empire business partner
                 efficiently and effectively.
               </p>
             </div>
@@ -915,7 +916,7 @@ export default function OpportunitiesPage() {
                 </div>
                 <h3 className="font-bold mb-2">Launch & Support</h3>
                 <p className="text-muted-foreground text-sm">
-                  Complete setup, training, and officially launch your Royal Enfield business with our ongoing support.
+                  Complete setup, training, and officially launch your Enfield Empire business with our ongoing support.
                 </p>
               </div>
             </div>
@@ -932,7 +933,7 @@ export default function OpportunitiesPage() {
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold mb-4">Partner Success Stories</h2>
               <p className="text-muted-foreground max-w-3xl mx-auto">
-                Hear from our successful business partners about their experience with Royal Enfield.
+                Hear from our successful business partners about their experience with Enfield Empire.
               </p>
             </div>
 
@@ -956,14 +957,14 @@ export default function OpportunitiesPage() {
                   <div className="relative mb-6">
                     <Image
                       src="/bikes/bike5.png"
-                      alt="Royal Enfield Dealership USA"
+                      alt="Enfield Empire Dealership USA"
                       height={200}
                       width={400}
                       className="w-full h-48 object-cover rounded-md"
                     />
                   </div>
                   <p className="italic text-muted-foreground mb-4">
-                    &quot;Opening a Royal Enfield dealership was the best business decision I&apos;ve made. The support from the
+                    &quot;Opening a Enfield Empire dealership was the best business decision I&apos;ve made. The support from the
                     company has been exceptional, and the growing demand for these motorcycles has exceeded our
                     projections.&quot;
                   </p>
@@ -998,14 +999,14 @@ export default function OpportunitiesPage() {
                   <div className="relative mb-6">
                     <Image
                       src="/bikes/bike4.png"
-                      alt="Royal Enfield Studio Store Europe"
+                      alt="Enfield Empire Studio Store Europe"
                       height={200}
                       width={400}
                       className="w-full h-48 object-cover rounded-md"
                     />
                   </div>
                   <p className="italic text-muted-foreground mb-4">
-                    &quot;Starting with a Studio Store allowed me to enter the Royal Enfield business with a manageable
+                    &quot;Starting with a Studio Store allowed me to enter the Enfield Empire business with a manageable
                     investment. The prime urban location and focused inventory model has proven highly profitable.&quot;
                   </p>
                   <p className="text-sm text-muted-foreground">
@@ -1039,7 +1040,7 @@ export default function OpportunitiesPage() {
                   <div className="relative mb-6">
                     <Image
                       src="/bikes/bike3.png"
-                      alt="Royal Enfield Distribution Asia"
+                      alt="Enfield Empire Distribution Asia"
                       height={200}
                       width={400}
                       className="w-full h-48 object-cover rounded-md"
@@ -1082,7 +1083,7 @@ export default function OpportunitiesPage() {
             <div className="max-w-3xl mx-auto space-y-4">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="font-bold text-lg mb-2">
-                  What are the financial requirements for becoming a Royal Enfield partner?
+                  What are the financial requirements for becoming a Enfield Empire partner?
                 </h3>
                 <p className="text-muted-foreground">
                   Financial requirements vary by partnership model. Exclusive dealerships typically require
@@ -1095,7 +1096,7 @@ export default function OpportunitiesPage() {
                 <h3 className="font-bold text-lg mb-2">Do I need prior experience in the motorcycle industry?</h3>
                 <p className="text-muted-foreground">
                   While prior experience in the automotive or motorcycle industry is beneficial, it&apos;s not always
-                  required. We value business acumen, entrepreneurial spirit, and passion for the Royal Enfield brand.
+                  required. We value business acumen, entrepreneurial spirit, and passion for the Enfield Empire brand.
                   Our comprehensive training programs can help bridge any knowledge gaps.
                 </p>
               </div>
@@ -1112,10 +1113,10 @@ export default function OpportunitiesPage() {
 
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="font-bold text-lg mb-2">
-                  What kind of ongoing support does Royal Enfield provide to partners?
+                  What kind of ongoing support does Enfield Empire provide to partners?
                 </h3>
                 <p className="text-muted-foreground">
-                  Royal Enfield provides comprehensive support including business setup assistance, staff training,
+                  Enfield Empire provides comprehensive support including business setup assistance, staff training,
                   marketing support, supply chain management, financial guidance, and community building initiatives.
                   Our dedicated partnership support team works closely with you throughout your business journey.
                 </p>
@@ -1138,7 +1139,7 @@ export default function OpportunitiesPage() {
         {/* CTA Section */}
         <section className="py-20 bg-black text-white flex justify-center">
           <div className="container text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Join the Royal Enfield Family?</h2>
+            <h2 className="text-3xl font-bold mb-4">Ready to Join the Enfield Empire Family?</h2>
             <p className="text-gray-300 max-w-2xl mx-auto mb-8">
               Take the first step towards a rewarding business partnership with one of the world&apos;s most iconic
               motorcycle brands.
@@ -1147,7 +1148,7 @@ export default function OpportunitiesPage() {
               <Button size="lg" className="bg-primary hover:bg-primary/90">
                 Apply for Partnership
               </Button>
-              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+              <Button size="lg" variant="outline" className="text-black border-white hover:bg-white/10">
                 Download Information Pack
               </Button>
             </div>
@@ -1161,7 +1162,7 @@ export default function OpportunitiesPage() {
               <div>
                 <h2 className="text-3xl font-bold mb-6">Contact Our Partnership Team</h2>
                 <p className="text-muted-foreground mb-8">
-                  Have questions about becoming a Royal Enfield business partner? Our dedicated team is here to help you
+                  Have questions about becoming a Enfield Empire business partner? Our dedicated team is here to help you
                   explore the opportunities.
                 </p>
 
@@ -1186,7 +1187,9 @@ export default function OpportunitiesPage() {
                     </div>
                     <div>
                       <h3 className="font-bold mb-1">Global Headquarters</h3>
-                      <p className="text-muted-foreground">123 Business Avenue, Corporate Park, CP 12345</p>
+                      <p className="text-muted-foreground">Main Block , Royan Enfield Tech Center ,
+296 , Rajiv Gandhi Salai , Elcot Sez, Sholinganahllur,
+Chennai, Tamil Nadu 600119</p>
                     </div>
                   </div>
 
@@ -1209,7 +1212,7 @@ export default function OpportunitiesPage() {
                     </div>
                     <div>
                       <h3 className="font-bold mb-1">Partnership Hotline</h3>
-                      <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                      <p className="text-muted-foreground">+91 9693894599</p>
                     </div>
                   </div>
 
@@ -1233,7 +1236,7 @@ export default function OpportunitiesPage() {
                     </div>
                     <div>
                       <h3 className="font-bold mb-1">Email Us</h3>
-                      <p className="text-muted-foreground">partnerships@royalenfield-global.com</p>
+                      <p className="text-muted-foreground">business@enfieldempire.com</p>
                     </div>
                   </div>
                 </div>
@@ -1248,7 +1251,7 @@ export default function OpportunitiesPage() {
                         <br />
                         Milwaukee, WI 12345
                         <br />
-                        +1 (555) 123-4567
+                        +91 9693894599
                       </p>
                     </div>
                     <div>
@@ -1274,7 +1277,7 @@ export default function OpportunitiesPage() {
                     <div>
                       <h4 className="font-bold">India (Headquarters)</h4>
                       <p className="text-muted-foreground text-sm">
-                        Royal Enfield Global HQ
+                        Enfield Empire Global HQ
                         <br />
                         Chennai, India 600042
                         <br />
@@ -1339,7 +1342,7 @@ export default function OpportunitiesPage() {
                       id="phone"
                       type="tel"
                       className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      placeholder="+1 (555) 123-4567"
+                      placeholder="+91 9693894599"
                     />
                   </div>
                   <div className="space-y-2">
@@ -1374,7 +1377,7 @@ export default function OpportunitiesPage() {
                     <textarea
                       id="message"
                       className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      placeholder="Tell us about your business experience, investment capacity, and why you're interested in partnering with Royal Enfield..."
+                      placeholder="Tell us about your business experience, investment capacity, and why you're interested in partnering with Enfield Empire..."
                     />
                   </div>
                   <Button type="submit" className="w-full">
@@ -1391,7 +1394,7 @@ export default function OpportunitiesPage() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Royal Enfield Business</h3>
+              <h3 className="text-xl font-bold mb-4">Enfield Empire Business</h3>
               <p className="text-gray-400 mb-4">
                 Your gateway to partnership opportunities with the world&apos;s oldest motorcycle brand in continuous
                 production.
@@ -1543,7 +1546,9 @@ export default function OpportunitiesPage() {
                     <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
                     <circle cx="12" cy="10" r="3" />
                   </svg>
-                  <span className="text-gray-400">123 Business Avenue, Corporate Park, CP 12345</span>
+                  <span className="text-gray-400">Main Block , Royan Enfield Tech Center ,
+296 , Rajiv Gandhi Salai , Elcot Sez, Sholinganahllur,
+Chennai, Tamil Nadu 600119</span>
                 </li>
                 <li className="flex items-center">
                   <svg
@@ -1560,7 +1565,7 @@ export default function OpportunitiesPage() {
                   >
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                   </svg>
-                  <span className="text-gray-400">+1 (555) 123-4567</span>
+                  <span className="text-gray-400">+91 9693894599</span>
                 </li>
                 <li className="flex items-center">
                   <svg
@@ -1578,7 +1583,7 @@ export default function OpportunitiesPage() {
                     <rect width="20" height="16" x="2" y="4" rx="2" />
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                   </svg>
-                  <span className="text-gray-400">partnerships@royalenfield-global.com</span>
+                  <span className="text-gray-400">business@enfieldempire.com</span>
                 </li>
                 <li className="flex items-center">
                   <svg
@@ -1603,7 +1608,7 @@ export default function OpportunitiesPage() {
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; {new Date().getFullYear()} Royal Enfield Business Partnerships. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Enfield Empire Business Partnerships. All rights reserved.</p>
             <p className="mt-2">
               <Link href="#" className="hover:text-white">
                 Privacy Policy
