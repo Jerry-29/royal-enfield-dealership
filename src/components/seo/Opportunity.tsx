@@ -2,15 +2,15 @@ export default function OpportunityJsonLd() {
     const schema = {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Royal Enfield Partnership Opportunities",
-      "description": "Explore exclusive Royal Enfield dealership and partnership opportunities worldwide.",
+      "name": "Enfield Empire Partnership Opportunities",
+      "description": "Explore exclusive Enfield Empire dealership and partnership opportunities worldwide.",
       "mainEntity": {
         "@type": "ItemList",
         "itemListElement": [
           {
             "@type": "Offer",
             "name": "Exclusive Dealership",
-            "description": "Become an exclusive Royal Enfield dealer with full rights to sales, service, and merchandise.",
+            "description": "Become an exclusive Enfield Empire dealer with full rights to sales, service, and merchandise.",
             "category": "Business Opportunity",
             "areaServed": "Worldwide",
             "priceSpecification": {
@@ -23,7 +23,7 @@ export default function OpportunityJsonLd() {
           {
             "@type": "Offer",
             "name": "Distribution Partnership",
-            "description": "Acquire distribution rights for Royal Enfield in your region.",
+            "description": "Acquire distribution rights for Enfield Empire in your region.",
             "category": "Business Opportunity",
             "areaServed": "Regional",
             "priceSpecification": {
@@ -35,7 +35,7 @@ export default function OpportunityJsonLd() {
           {
             "@type": "Offer",
             "name": "Studio Store",
-            "description": "Launch a compact Royal Enfield retail format in prime urban locations.",
+            "description": "Launch a compact Enfield Empire retail format in prime urban locations.",
             "category": "Business Opportunity",
             "areaServed": "Urban Areas",
             "priceSpecification": {
@@ -49,7 +49,7 @@ export default function OpportunityJsonLd() {
       },
       "provider": {
         "@type": "Organization",
-        "name": "Royal Enfield",
+        "name": "Enfield Empire",
         "url": "https://royalenfield-dealership.com",
         "contactPoint": {
           "@type": "ContactPoint",

@@ -2,10 +2,10 @@ export default function JsonLdSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Royal Enfield Business Partnerships",
+    "name": "Enfield Empire Business Partnerships",
     "url": "https://royalenfield-dealership.com",
     "logo": "https://royalenfield-dealership.com/logo.png",
-    "description": "Partner with Royal Enfield to start your motorcycle business journey. Explore dealership opportunities worldwide.",
+    "description": "Partner with Enfield Empire to start your motorcycle business journey. Explore dealership opportunities worldwide.",
     "sameAs": [
       "https://facebook.com/royalenfield",
       "https://twitter.com/royalenfield",
@@ -23,7 +23,7 @@ export default function JsonLdSchema() {
       "@type": "ContactPoint",
       "telephone": "+1-555-123-4567",
       "contactType": "sales",
-      "email": "partnerships@royalenfield-global.com",
+      "email": "business@enfieldempire.com",
       "availableLanguage": ["English"]
     }],
     "offers": {
@@ -32,17 +32,17 @@ export default function JsonLdSchema() {
         {
           "@type": "Offer",
           "name": "Exclusive Dealership",
-          "description": "Full-scale Royal Enfield dealership opportunity"
+          "description": "Full-scale Enfield Empire dealership opportunity"
         },
         {
           "@type": "Offer",
           "name": "Regional Distribution",
-          "description": "Distribute Royal Enfield motorcycles in your region"
+          "description": "Distribute Enfield Empire motorcycles in your region"
         },
         {
           "@type": "Offer",
           "name": "Studio Store",
-          "description": "Compact Royal Enfield retail format"
+          "description": "Compact Enfield Empire retail format"
         }
       ]
     }

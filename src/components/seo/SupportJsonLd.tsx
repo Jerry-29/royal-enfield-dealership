@@ -5,10 +5,10 @@ export default function SupportJsonLd() {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What support do Royal Enfield dealers receive?",
+          "name": "What support do Enfield Empire dealers receive?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Royal Enfield provides comprehensive support including technical training, marketing resources, business development guidance, and dedicated account management."
+            "text": "Enfield Empire provides comprehensive support including technical training, marketing resources, business development guidance, and dedicated account management."
           }
         },
         {
@@ -22,7 +22,7 @@ export default function SupportJsonLd() {
       ],
       "provider": {
         "@type": "Organization",
-        "name": "Royal Enfield",
+        "name": "Enfield Empire",
         "url": "https://royalenfield-dealership.com"
       }
     }

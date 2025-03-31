@@ -2,13 +2,13 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Royal Enfield Business Partnerships',
+    name: 'Enfield Empire Business Partnerships',
     short_name: 'RE Business',
-    description: 'Explore Royal Enfield dealership opportunities and business partnerships. Join the legacy of the world\'s oldest motorcycle brand in continuous production.',
+    description: 'Explore Enfield Empire dealership opportunities and business partnerships. Join the legacy of the world\'s oldest motorcycle brand in continuous production.',
     start_url: '/',
     display: 'standalone',
     background_color: '#FFFFFF',
-    theme_color: '#D4202C', // Royal Enfield Red
+    theme_color: '#D4202C', // Enfield Empire Red
     scope: '/',
     id: 'royal-enfield-dealership',
     launch_handler: {
@@ -83,7 +83,7 @@ export default function manifest(): MetadataRoute.Manifest {
         sizes: '1920x1080',
         type: 'image/jpeg',
         form_factor: 'wide',
-        label: 'Royal Enfield Business Homepage'
+        label: 'Enfield Empire Business Homepage'
       },
       {
         src: '/screenshots/desktop-opportunities.jpg',

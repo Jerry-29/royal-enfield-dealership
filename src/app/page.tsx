@@ -19,6 +19,8 @@ import DealershipMap from "@/components/dealership-map";
 import { ContactUs } from "@/components/contact-us";
 import { DownloProfile } from "@/components/profile-download";
 import { LearnMore } from "@/components/learn-more";
+import { BecomePartner } from "@/components/become-partner";
+import { ExploreOpportunity } from "@/components/explore-opprtunity";
 
 export const metadata: Metadata = homeMetadata;
 
@@ -32,11 +34,11 @@ export default function Home() {
           <div className="flex items-center space-x-4 text-sm">
             <div className="flex items-center">
               <Phone className="h-4 w-4 mr-2" />
-              <span>+1 (555) 123-4567</span>
+              <span>+91 9693894599</span>
             </div>
             <div className="flex items-center">
               <Mail className="h-4 w-4 mr-2" />
-              <span>partnerships@royalenfield-global.com</span>
+              <span>business@enfieldempire.com</span>
             </div>
           </div>
           <div className="flex space-x-3">
@@ -60,7 +62,7 @@ export default function Home() {
       <header className="bg-white sticky top-0 z-10 shadow-sm flex justify-center">
         <div className="container flex justify-between items-center py-4">
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold">ROYAL ENFIELD</span>
+            <span className="text-2xl font-bold">ENFIELD EMPIRE</span>
             <span className="ml-2 text-sm uppercase tracking-widest">
               Business Partnerships
             </span>
@@ -85,7 +87,7 @@ export default function Home() {
               Contact
             </Link>
           </nav>
-          <Button className="hidden md:inline-flex">Become a Partner</Button>
+          <BecomePartner />
           <Button variant="outline" className="md:hidden">
             Menu
           </Button>
@@ -97,7 +99,7 @@ export default function Home() {
         <section className="relative h-[80vh] bg-black ">
           <Image
             src="/hero-section/image1.png"
-            alt="Royal Enfield Motorcycle"
+            alt="Enfield Empire Motorcycle"
             fill
             className="object-cover opacity-70"
             priority
@@ -106,16 +108,14 @@ export default function Home() {
             <div className="container">
               <div className="max-w-xl text-white">
                 <h1 className="text-5xl font-bold mb-4">
-                  Grow Your Business with Royal Enfield
+                  Grow Your Business with Enfield Empire
                 </h1>
                 <p className="text-xl mb-8">
-                  Partner with an iconic global brand. Open a Royal Enfield
+                  Partner with an iconic global brand. Open a Enfield Empire
                   dealership, distribution center, or showroom in your region.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="bg-primary hover:bg-primary/90">
-                    Explore Opportunities
-                  </Button>
+                  <ExploreOpportunity />
                   <Button
                     size="lg"
                     variant="outline"
@@ -140,9 +140,9 @@ export default function Home() {
                 Partnership Opportunities
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Join the Royal Enfield family with multiple business partnership
-                models designed to suit different markets and investment
-                capabilities.
+                Join the Enfield Empire family with multiple business
+                partnership models designed to suit different markets and
+                investment capabilities.
               </p>
             </div>
 
@@ -152,7 +152,7 @@ export default function Home() {
                 <div className="relative h-64">
                   <Image
                     src="/bikes/bike1.png"
-                    alt="Royal Enfield Dealership"
+                    alt="Enfield Empire Dealership"
                     fill
                     className="object-cover"
                   />
@@ -162,7 +162,7 @@ export default function Home() {
                     Exclusive Dealership
                   </h3>
                   <p className="text-muted-foreground mb-4">
-                    Become an exclusive Royal Enfield dealer with sales,
+                    Become an exclusive Enfield Empire dealer with sales,
                     service, and spare parts operations in your territory.
                   </p>
                   <div className="flex justify-between items-center">
@@ -179,7 +179,7 @@ export default function Home() {
                 <div className="relative h-64">
                   <Image
                     src="/bikes/bike2.png"
-                    alt="Royal Enfield Distribution"
+                    alt="Enfield Empire Distribution"
                     fill
                     className="object-cover"
                   />
@@ -189,8 +189,8 @@ export default function Home() {
                     Regional Distribution
                   </h3>
                   <p className="text-muted-foreground mb-4">
-                    Distribute Royal Enfield motorcycles, accessories, and parts
-                    to a network of dealers in your region.
+                    Distribute Enfield Empire motorcycles, accessories, and
+                    parts to a network of dealers in your region.
                   </p>
                   <div className="flex justify-between items-center">
                     <span className="text-lg font-bold">Exclusive Rights</span>
@@ -206,7 +206,7 @@ export default function Home() {
                 <div className="relative h-64">
                   <Image
                     src="/bikes/bike3.png"
-                    alt="Royal Enfield Showroom"
+                    alt="Enfield Empire Showroom"
                     fill
                     className="object-cover"
                   />
@@ -214,7 +214,7 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Studio Store</h3>
                   <p className="text-muted-foreground mb-4">
-                    Open a compact Royal Enfield showroom in premium urban
+                    Open a compact Enfield Empire showroom in premium urban
                     locations with lower investment requirements.
                   </p>
                   <div className="flex justify-between items-center">
@@ -241,7 +241,7 @@ export default function Home() {
           <div className="container">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold mb-4">
-                Why Partner With Royal Enfield
+                Why Partner With Enfield Empire
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 Join a global brand with over 120 years of heritage and a
@@ -253,7 +253,7 @@ export default function Home() {
               <div className="relative h-96 rounded-lg overflow-hidden">
                 <Image
                   src="/bikes/bike4.png"
-                  alt="Royal Enfield Showroom Interior"
+                  alt="Enfield Empire Showroom Interior"
                   fill
                   className="object-cover"
                 />
@@ -263,7 +263,7 @@ export default function Home() {
                   A Legacy of Excellence
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Royal Enfield is the oldest motorcycle brand in continuous
+                  Enfield Empire is the oldest motorcycle brand in continuous
                   production, with a devoted global following and rapidly
                   expanding market presence. Our partners benefit from our
                   iconic status and growing demand.
@@ -310,7 +310,7 @@ export default function Home() {
                 Comprehensive Business Support
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                We provide extensive support to ensure your Royal Enfield
+                We provide extensive support to ensure your Enfield Empire
                 business thrives from day one.
               </p>
             </div>
@@ -345,7 +345,7 @@ export default function Home() {
                   Comprehensive support for location selection, showroom design,
                   and business setup with detailed operational guidelines.
                 </p>
-                <LearnMore/>
+                <LearnMore />
               </div>
 
               {/* Service Card 2 */}
@@ -372,7 +372,7 @@ export default function Home() {
                   teams to ensure operational excellence and customer
                   satisfaction.
                 </p>
-                <LearnMore/>
+                <LearnMore />
               </div>
 
               {/* Service Card 3 */}
@@ -398,7 +398,7 @@ export default function Home() {
                   Access to global marketing assets, local campaign support, and
                   digital marketing strategies to drive customer acquisition.
                 </p>
-                <LearnMore/>
+                <LearnMore />
               </div>
 
               {/* Service Card 4 */}
@@ -426,7 +426,7 @@ export default function Home() {
                   Efficient inventory management systems, regular supply of
                   motorcycles, parts, and accessories with optimized logistics.
                 </p>
-                <LearnMore/>
+                <LearnMore />
               </div>
 
               {/* Service Card 5 */}
@@ -450,9 +450,9 @@ export default function Home() {
                 <h3 className="text-xl font-bold mb-3">Financial Guidance</h3>
                 <p className="text-muted-foreground mb-4">
                   Business planning support, ROI projections, and guidance on
-                  securing financing for your Royal Enfield business venture.
+                  securing financing for your Enfield Empire business venture.
                 </p>
-                <LearnMore/>
+                <LearnMore />
               </div>
 
               {/* Service Card 6 */}
@@ -475,11 +475,11 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Community Building</h3>
                 <p className="text-muted-foreground mb-4">
-                  Support for building and engaging with the local Royal Enfield
-                  rider community through events, rides, and exclusive
+                  Support for building and engaging with the local Enfield
+                  Empire rider community through events, rides, and exclusive
                   experiences.
                 </p>
-                <LearnMore/>
+                <LearnMore />
               </div>
             </div>
           </div>
@@ -493,7 +493,7 @@ export default function Home() {
                 Partnership Application Process
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                A straightforward process to help you become a Royal Enfield
+                A straightforward process to help you become a Enfield Empire
                 business partner.
               </p>
             </div>
@@ -555,22 +555,24 @@ export default function Home() {
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold mb-6">About Royal Enfield</h2>
+                <h2 className="text-3xl font-bold mb-6">
+                  About Enfield Empire
+                </h2>
                 <p className="text-muted-foreground mb-4">
-                  Founded in 1901, Royal Enfield is the oldest motorcycle brand
+                  Founded in 1901, Enfield Empire is the oldest motorcycle brand
                   in continuous production. Our motorcycles are known for their
                   classic styling, durability, and the unique experience they
                   offer to riders around the world.
                 </p>
                 <p className="text-muted-foreground mb-4">
                   With a strong global presence and rapidly expanding markets,
-                  Royal Enfield offers exceptional business opportunities for
+                  Enfield Empire offers exceptional business opportunities for
                   partners who share our passion for motorcycling and commitment
                   to excellence.
                 </p>
                 <p className="text-muted-foreground mb-8">
                   Our business partnership program is designed to support
-                  entrepreneurs in establishing successful Royal Enfield
+                  entrepreneurs in establishing successful Enfield Empire
                   businesses while maintaining the brand&apos;s heritage and
                   values.
                 </p>
@@ -600,12 +602,12 @@ export default function Home() {
                     <div className="text-sm">Annual Production</div>
                   </div>
                 </div>
-                <DownloProfile/>
+                <DownloProfile />
               </div>
               <div className="relative h-[500px] rounded-lg overflow-hidden">
                 <Image
                   src="/bikes/bike5.png"
-                  alt="Royal Enfield Heritage"
+                  alt="Enfield Empire Heritage"
                   fill
                   className="object-cover"
                 />
@@ -621,7 +623,7 @@ export default function Home() {
               <h2 className="text-3xl font-bold mb-4">Success Stories</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 Hear from our successful business partners about their
-                experience with Royal Enfield.
+                experience with Enfield Empire.
               </p>
             </div>
 
@@ -642,10 +644,10 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="italic text-muted-foreground mb-4">
-                  &quot;Opening a Royal Enfield dealership was the best business
-                  decision I&apos;ve made. The support from the company has been
-                  exceptional, and the growing demand for these motorcycles has
-                  exceeded our projections.&quot;
+                  &quot;Opening a Enfield Empire dealership was the best
+                  business decision I&apos;ve made. The support from the company
+                  has been exceptional, and the growing demand for these
+                  motorcycles has exceeded our projections.&quot;
                 </p>
                 <div className="flex text-yellow-400">
                   <svg
@@ -707,7 +709,7 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="italic text-muted-foreground mb-4">
-                  &quot;As a regional distributor for Royal Enfield, we&apos;ve
+                  &quot;As a regional distributor for Enfield Empire, we&apos;ve
                   seen consistent growth year over year. The brand&apos;s appeal
                   continues to expand, and the business model has proven highly
                   profitable for our network of dealers.&quot;
@@ -773,7 +775,7 @@ export default function Home() {
                 </div>
                 <p className="italic text-muted-foreground mb-4">
                   &quot;Starting with a smaller Studio Store format allowed me
-                  to enter the Royal Enfield business with a manageable
+                  to enter the Enfield Empire business with a manageable
                   investment. The support from the company has been outstanding,
                   and we&apos;re now expanding to a full dealership.&quot;
                 </p>
@@ -832,7 +834,7 @@ export default function Home() {
         <section className="py-20 bg-black text-white flex justify-center">
           <div className="container text-center">
             <h2 className="text-3xl font-bold mb-4">
-              Ready to Join the Royal Enfield Family?
+              Ready to Join the Enfield Empire Family?
             </h2>
             <p className="text-gray-300 max-w-2xl mx-auto mb-8">
               Take the first step towards a rewarding business partnership with
@@ -868,7 +870,9 @@ export default function Home() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Royal Enfield Business</h3>
+              <h3 className="text-xl font-bold mb-4">
+                Enfield Empire Business
+              </h3>
               <p className="text-gray-400 mb-4">
                 Your gateway to partnership opportunities with the world&apos;s
                 oldest motorcycle brand in continuous production.
@@ -985,17 +989,19 @@ export default function Home() {
                 <li className="flex items-start">
                   <MapPin className="h-5 w-5 mr-2 mt-0.5 text-gray-400" />
                   <span className="text-gray-400">
-                    123 Business Avenue, Corporate Park, CP 12345
+                    Main Block , Royan Enfield Tech Center , 296 , Rajiv Gandhi
+                    Salai , Elcot Sez, Sholinganahllur, Chennai, Tamil Nadu
+                    600119
                   </span>
                 </li>
                 <li className="flex items-center">
                   <Phone className="h-5 w-5 mr-2 text-gray-400" />
-                  <span className="text-gray-400">+1 (555) 123-4567</span>
+                  <span className="text-gray-400">+91 9693894599</span>
                 </li>
                 <li className="flex items-center">
                   <Mail className="h-5 w-5 mr-2 text-gray-400" />
                   <span className="text-gray-400">
-                    partnerships@royalenfield-global.com
+                    business@enfieldempire.com
                   </span>
                 </li>
                 <li className="flex items-center">
@@ -1010,7 +1016,7 @@ export default function Home() {
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
             <p>
-              &copy; {new Date().getFullYear()} Royal Enfield Business
+              &copy; {new Date().getFullYear()} Enfield Empire Business
               Partnerships. All rights reserved.
             </p>
             <p className="mt-2">
