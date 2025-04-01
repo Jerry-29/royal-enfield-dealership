@@ -115,21 +115,6 @@ export const ContactUs = () => {
 
               <div className="flex items-start">
                 <div className="bg-primary/10 p-3 rounded-full mr-4">
-                  <Phone className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-bold mb-1">Partnership Hotline</h3>
-                  <a
-                    href="tel:+919693894599"
-                    className="text-muted-foreground hover:text-primary cursor-pointer"
-                  >
-                    +91 9693894599
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="bg-primary/10 p-3 rounded-full mr-4">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <div>
@@ -278,7 +263,7 @@ export const ContactUs = () => {
                   className={`flex h-10 w-full rounded-md border ${
                     errors.phone ? "border-red-500" : "border-input"
                   } bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50`}
-                  placeholder="+91 9693894599"
+                  placeholder="+91 888XXXX888"
                 />
                 {errors.phone && (
                   <p className="text-red-500 text-sm">{errors.phone.message}</p>

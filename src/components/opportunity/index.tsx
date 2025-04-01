@@ -15,10 +15,6 @@ export default function OpportunitiesPage() {
         <div className="container flex justify-between items-center">
           <div className="flex items-center space-x-4 text-sm">
             <div className="flex items-center">
-              <Phone className="h-4 w-4 mr-2" />
-              <span>+91 9693894599</span>
-            </div>
-            <div className="flex items-center">
               <Mail className="h-4 w-4 mr-2" />
               <span>{BUSINESS_EMAIL}</span>
             </div>
@@ -1342,10 +1338,6 @@ Chennai, Tamil Nadu 600119</p>
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                       </svg>
                     </div>
-                    <div>
-                      <h3 className="font-bold mb-1">Partnership Hotline</h3>
-                      <p className="text-muted-foreground">+91 9693894599</p>
-                    </div>
                   </div>
 
                   <div className="flex items-start">
@@ -1384,8 +1376,6 @@ Chennai, Tamil Nadu 600119</p>
                         123 Business Avenue
                         <br />
                         Milwaukee, WI 12345
-                        <br />
-                        +91 9693894599
                       </p>
                     </div>
                     <div>
@@ -1484,7 +1474,7 @@ Chennai, Tamil Nadu 600119</p>
                       id="phone"
                       type="tel"
                       className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      placeholder="+91 9693894599"
+                      placeholder="+91 123 456 7890"
                     />
                   </div>
                   <div className="space-y-2">
@@ -1736,23 +1726,6 @@ Chennai, Tamil Nadu 600119</p>
                   <span className="text-gray-400">Main Block , Royan Enfield Tech Center ,
 296 , Rajiv Gandhi Salai , Elcot Sez, Sholinganahllur,
 Chennai, Tamil Nadu 600119</span>
-                </li>
-                <li className="flex items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="lucide lucide-phone mr-2 text-gray-400"
-                  >
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                  </svg>
-                  <span className="text-gray-400">+91 9693894599</span>
                 </li>
                 <li className="flex items-center">
                   <svg
