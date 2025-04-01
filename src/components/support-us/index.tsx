@@ -9,7 +9,6 @@ import {
   DollarSign,
   Users2,
   ChevronRight,
-  Phone,
   Mail,
   Download,
 } from "lucide-react";

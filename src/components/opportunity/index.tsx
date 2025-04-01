@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Phone, Mail, ChevronRight, ArrowRight, Check, Download, Globe, Store, Wrench, Building } from "lucide-react"
+import { Mail, ChevronRight, ArrowRight, Check, Download, Globe, Store, Wrench, Building } from "lucide-react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Badge } from "@/components/ui/badge"
