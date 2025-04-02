@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { defaultMetadata } from "@/config/metadata/default";
 import JsonLd from "@/components/seo/JsonLd";
+import GoogleTagManager from "@/components/seo/GoogleTagManager";
+import GoogleTagManagerNoScript from "@/components/seo/GoogleTagManagerNoScript";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "leaflet/dist/leaflet.css";
@@ -33,10 +35,12 @@ export default function RootLayout({
         />
         <link rel="icon" href="/favicon.ico" />
         <JsonLd />
+        <GoogleTagManager />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <GoogleTagManagerNoScript />
         {children}
       </body>
     </html>
