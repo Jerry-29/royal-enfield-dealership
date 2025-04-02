@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = defaultMetadata
+export const metadata: Metadata = defaultMetadata;
 
 export default function RootLayout({
   children,
@@ -27,6 +27,10 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="google-site-verification"
+          content="RUfIBsodN5c4WQko8qKIqPh5-IJZrnFz9VGE5SpUs7M"
+        />
         <link rel="icon" href="/favicon.ico" />
         <JsonLd />
       </head>
