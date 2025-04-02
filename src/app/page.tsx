@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
-  Phone,
   Mail,
   MapPin,
   Clock,
@@ -33,17 +32,6 @@ export default function Home() {
       <div className="bg-black text-white py-2 flex justify-center">
         <div className="container flex justify-between items-center">
           <div className="flex items-center space-x-4 text-sm">
-            <div className="flex items-center">
-              <Phone className="h-4 w-4 mr-2" />
-              <span>
-                <a
-                  href="tel:+919693894599"
-                  className="hover:text-primary cursor-pointer"
-                >
-                  +91 9693894599{" "}
-                </a>
-              </span>
-            </div>
             <div className="flex items-center">
               <Mail className="h-4 w-4 mr-2" />
               <a
@@ -1009,10 +997,6 @@ export default function Home() {
                     Salai , Elcot Sez, Sholinganahllur, Chennai, Tamil Nadu
                     600119
                   </span>
-                </li>
-                <li className="flex items-center">
-                  <Phone className="h-5 w-5 mr-2 text-gray-400" />
-                  <span className="text-gray-400">+91 9693894599</span>
                 </li>
                 <li className="flex items-center">
                   <Mail className="h-5 w-5 mr-2 text-gray-400" />

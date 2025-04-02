@@ -9,7 +9,6 @@ import {
   DollarSign,
   Users2,
   ChevronRight,
-  Phone,
   Mail,
   Download,
 } from "lucide-react";
@@ -31,15 +30,6 @@ export default function SupportPage2() {
       <div className="bg-black text-white py-2 flex justify-center">
         <div className="container flex justify-between items-center">
           <div className="flex items-center space-x-4 text-sm">
-            <div className="flex items-center">
-              <Phone className="h-4 w-4 mr-2" />
-              <a
-                href="tel:+919693894599"
-                className="hover:text-primary cursor-pointer"
-              >
-                +91 9693894599
-              </a>
-            </div>
             <div className="flex items-center">
               <Mail className="h-4 w-4 mr-2" />
               <a
@@ -1361,15 +1351,6 @@ export default function SupportPage2() {
                 </p>
 
                 <div className="space-y-6 mb-8">
-                  <div className="flex items-start">
-                    <div className="bg-primary/10 p-3 rounded-full mr-4">
-                      <Phone className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold mb-1">Support Hotline</h3>
-                      <p className="text-muted-foreground">+91 9693894599</p>
-                    </div>
-                  </div>
 
                   <div className="flex items-start">
                     <div className="bg-primary/10 p-3 rounded-full mr-4">
@@ -1394,13 +1375,6 @@ export default function SupportPage2() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <h4 className="font-bold">North America</h4>
-                      <p className="text-muted-foreground text-sm">
-                        123 Business Avenue
-                        <br />
-                        Milwaukee, WI 12345
-                        <br />
-                        +91 9693894599
-                      </p>
                     </div>
                     <div>
                       <h4 className="font-bold">Europe</h4>
@@ -1750,28 +1724,6 @@ export default function SupportPage2() {
                     Salai , Elcot Sez, Sholinganahllur, Chennai, Tamil Nadu
                     600119
                   </span>
-                </li>
-                <li className="flex items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="lucide lucide-phone mr-2 text-gray-400"
-                  >
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                  </svg>
-                  <a
-                    href="tel:+919693894599"
-                    className="text-gray-400 hover:text-white cursor-pointer"
-                  >
-                    +91 9693894599
-                  </a>
                 </li>
                 <li className="flex items-center">
                   <svg
