@@ -17,6 +17,7 @@ import { toast } from "sonner";
 import { useForm } from "react-hook-form";
 import { ApiError } from "@/util/types";
 import { BUSINESS_EMAIL } from "@/config/constants";
+import { useRouter } from "next/navigation";
 
 // Form validation schema
 const formSchema = z.object({
@@ -40,6 +41,7 @@ type FormData = z.infer<typeof formSchema>;
 
 export const ContactUs = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const router = useRouter();
 
   const {
     register,
@@ -70,6 +72,8 @@ export const ContactUs = () => {
 
       toast.success("Thank you for your inquiry. We will contact you soon!");
       reset(); // Reset form
+
+      router.push("/success");
     } catch (error) {
       if (error instanceof Error) {
         toast.error(error.message);
