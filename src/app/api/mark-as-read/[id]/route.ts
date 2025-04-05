@@ -2,14 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import dbConnect from "@/lib/dbConnect";
 import Partnership from "@/util/schema/partnership";
 
-// Define the type for the dynamic route context
-type Params = {
-  params: {
-    id: string;
-  };
-};
-
-export async function PUT(request: NextRequest, { params }: Params) {
+export async function PUT(
+  request: NextRequest,
+  { params }: { params: { id: string } }
+) {
   try {
     await dbConnect();
     const id = params.id;
@@ -53,7 +49,7 @@ export async function PUT(request: NextRequest, { params }: Params) {
         message:
           error instanceof Error
             ? error.message
-            : "Failed to update partnership",
+            : "Failed to update partnership .....",
       },
       { status: 500 }
     );
