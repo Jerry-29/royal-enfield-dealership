@@ -2,13 +2,10 @@ import { NextResponse } from "next/server";
 import dbConnect from "@/lib/dbConnect";
 import Partnership from "@/util/schema/partnership";
 
-interface RouteContext {
-  params: {
-    id: string;
-  };
-}
-
-export async function PUT(request: Requests, { params }: RouteContext) {
+export async function PUT(
+  request: Request,
+  { params }: { params: { id: string } }
+) {
   try {
     await dbConnect();
     const id = await Promise.resolve(params.id);
