@@ -8,7 +8,7 @@ interface RouteContext {
   };
 }
 
-export async function PUT(request: Request, { params }: RouteContext) {
+export async function PUT(request: Requests, { params }: RouteContext) {
   try {
     await dbConnect();
     const id = await Promise.resolve(params.id);
