@@ -23,7 +23,6 @@ const options: ConnectOptions = {
 async function dbConnect() {
   try {
     const conn = await mongoose.connect(MONGODB_URI, options);
-    console.log(`MongoDB Connected: ${conn.connection.host}`);
 
     mongoose.connection.on("error", (err) => {
       console.error("MongoDB connection error:", err);

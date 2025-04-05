@@ -1,12 +1,37 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Mail, ChevronRight, ArrowRight, Check, Download, Globe, Store, Wrench, Building } from "lucide-react"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { Badge } from "@/components/ui/badge"
-import { BecomePartner } from "../become-partner"
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import {
+  Mail,
+  ChevronRight,
+  ArrowRight,
+  Check,
+  Download,
+  Globe,
+  Store,
+  Wrench,
+  Building,
+} from "lucide-react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import { Badge } from "@/components/ui/badge";
+import { BecomePartner } from "../become-partner";
 import { BUSINESS_EMAIL } from "@/config/constants";
+import { ContactUs } from "../contact-us";
 export default function OpportunitiesPage() {
   return (
     <div className="flex min-h-screen flex-col">
@@ -117,7 +142,7 @@ export default function OpportunitiesPage() {
               Contact
             </Link>
           </nav>
-          <BecomePartner/>
+          <BecomePartner />
           <Button variant="outline" className="md:hidden">
             Menu
           </Button>
@@ -151,8 +176,8 @@ export default function OpportunitiesPage() {
                   </Button>
                   <Button
                     size="lg"
-                    variant="outline"
-                    className="text-white border-white hover:bg-white/10"
+                    variant="secondary"
+                    className="text-black border-white hover:bg/10"
                   >
                     Apply Now
                   </Button>
@@ -722,9 +747,10 @@ export default function OpportunitiesPage() {
                 </div>
 
                 <p className="text-muted-foreground mb-6">
-                  Open a compact Enfield Empire showroom in premium urban locations with lower investment requirements.
-                  Studio Stores are designed for high-visibility areas with focused motorcycle displays and essential
-                  services.
+                  Open a compact Enfield Empire showroom in premium urban
+                  locations with lower investment requirements. Studio Stores
+                  are designed for high-visibility areas with focused motorcycle
+                  displays and essential services.
                 </p>
 
                 <div className="space-y-4 mb-8">
@@ -735,7 +761,8 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Lower Investment Entry</h3>
                       <p className="text-muted-foreground">
-                        Start your Enfield Empire business with a lower capital investment compared to a full dealership.
+                        Start your Enfield Empire business with a lower capital
+                        investment compared to a full dealership.
                       </p>
                     </div>
                   </div>
@@ -760,7 +787,8 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Focused Product Range</h3>
                       <p className="text-muted-foreground">
-                        Display and sell key Enfield Empire models with a curated selection of accessories and apparel.
+                        Display and sell key Enfield Empire models with a
+                        curated selection of accessories and apparel.
                       </p>
                     </div>
                   </div>
@@ -838,9 +866,10 @@ export default function OpportunitiesPage() {
                 </div>
 
                 <p className="text-muted-foreground mb-6">
-                  Establish a dedicated Enfield Empire service center with genuine parts and accessories sales. This
-                  model is ideal for automotive service professionals looking to specialize in Enfield Empire
-                  motorcycles.
+                  Establish a dedicated Enfield Empire service center with
+                  genuine parts and accessories sales. This model is ideal for
+                  automotive service professionals looking to specialize in
+                  Enfield Empire motorcycles.
                 </p>
 
                 <div className="space-y-4 mb-8">
@@ -851,8 +880,8 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Lowest Investment Entry</h3>
                       <p className="text-muted-foreground">
-                        Start your Enfield Empire business with the lowest capital investment among our partnership
-                        models.
+                        Start your Enfield Empire business with the lowest
+                        capital investment among our partnership models.
                       </p>
                     </div>
                   </div>
@@ -864,7 +893,8 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Technical Expertise</h3>
                       <p className="text-muted-foreground">
-                        Comprehensive technical training and support for servicing all Enfield Empire motorcycle models.
+                        Comprehensive technical training and support for
+                        servicing all Enfield Empire motorcycle models.
                       </p>
                     </div>
                   </div>
@@ -876,8 +906,8 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Genuine Parts Business</h3>
                       <p className="text-muted-foreground">
-                        Authorized dealer of genuine Enfield Empire parts and accessories with direct supply chain
-                        access.
+                        Authorized dealer of genuine Enfield Empire parts and
+                        accessories with direct supply chain access.
                       </p>
                     </div>
                   </div>
@@ -889,8 +919,8 @@ export default function OpportunitiesPage() {
                     <div>
                       <h3 className="font-bold">Limited Motorcycle Sales</h3>
                       <p className="text-muted-foreground">
-                        Option to sell select Enfield Empire models, with potential to upgrade to a full dealership over
-                        time.
+                        Option to sell select Enfield Empire models, with
+                        potential to upgrade to a full dealership over time.
                       </p>
                     </div>
                   </div>
@@ -953,8 +983,9 @@ export default function OpportunitiesPage() {
                 Partnership Application Process
               </h2>
               <p className="text-muted-foreground max-w-3xl mx-auto">
-                Our streamlined application process is designed to help you become a Enfield Empire business partner
-                efficiently and effectively.
+                Our streamlined application process is designed to help you
+                become a Enfield Empire business partner efficiently and
+                effectively.
               </p>
             </div>
 
@@ -1021,7 +1052,8 @@ export default function OpportunitiesPage() {
                 </div>
                 <h3 className="font-bold mb-2">Launch & Support</h3>
                 <p className="text-muted-foreground text-sm">
-                  Complete setup, training, and officially launch your Enfield Empire business with our ongoing support.
+                  Complete setup, training, and officially launch your Enfield
+                  Empire business with our ongoing support.
                 </p>
               </div>
             </div>
@@ -1040,7 +1072,8 @@ export default function OpportunitiesPage() {
                 Partner Success Stories
               </h2>
               <p className="text-muted-foreground max-w-3xl mx-auto">
-                Hear from our successful business partners about their experience with Enfield Empire.
+                Hear from our successful business partners about their
+                experience with Enfield Empire.
               </p>
             </div>
 
@@ -1073,9 +1106,10 @@ export default function OpportunitiesPage() {
                     />
                   </div>
                   <p className="italic text-muted-foreground mb-4">
-                    &quot;Opening a Enfield Empire dealership was the best business decision I&apos;ve made. The support from the
-                    company has been exceptional, and the growing demand for these motorcycles has exceeded our
-                    projections.&quot;
+                    &quot;Opening a Enfield Empire dealership was the best
+                    business decision I&apos;ve made. The support from the
+                    company has been exceptional, and the growing demand for
+                    these motorcycles has exceeded our projections.&quot;
                   </p>
                   <p className="text-sm text-muted-foreground">
                     <span className="font-bold">Results:</span> 120% sales
@@ -1115,8 +1149,10 @@ export default function OpportunitiesPage() {
                     />
                   </div>
                   <p className="italic text-muted-foreground mb-4">
-                    &quot;Starting with a Studio Store allowed me to enter the Enfield Empire business with a manageable
-                    investment. The prime urban location and focused inventory model has proven highly profitable.&quot;
+                    &quot;Starting with a Studio Store allowed me to enter the
+                    Enfield Empire business with a manageable investment. The
+                    prime urban location and focused inventory model has proven
+                    highly profitable.&quot;
                   </p>
                   <p className="text-sm text-muted-foreground">
                     <span className="font-bold">Results:</span> Profitable
@@ -1199,7 +1235,8 @@ export default function OpportunitiesPage() {
             <div className="max-w-3xl mx-auto space-y-4">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="font-bold text-lg mb-2">
-                  What are the financial requirements for becoming a Enfield Empire partner?
+                  What are the financial requirements for becoming a Enfield
+                  Empire partner?
                 </h3>
                 <p className="text-muted-foreground">
                   Financial requirements vary by partnership model. Exclusive
@@ -1215,9 +1252,11 @@ export default function OpportunitiesPage() {
                   Do I need prior experience in the motorcycle industry?
                 </h3>
                 <p className="text-muted-foreground">
-                  While prior experience in the automotive or motorcycle industry is beneficial, it&apos;s not always
-                  required. We value business acumen, entrepreneurial spirit, and passion for the Enfield Empire brand.
-                  Our comprehensive training programs can help bridge any knowledge gaps.
+                  While prior experience in the automotive or motorcycle
+                  industry is beneficial, it&apos;s not always required. We
+                  value business acumen, entrepreneurial spirit, and passion for
+                  the Enfield Empire brand. Our comprehensive training programs
+                  can help bridge any knowledge gaps.
                 </p>
               </div>
 
@@ -1237,12 +1276,15 @@ export default function OpportunitiesPage() {
 
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="font-bold text-lg mb-2">
-                  What kind of ongoing support does Enfield Empire provide to partners?
+                  What kind of ongoing support does Enfield Empire provide to
+                  partners?
                 </h3>
                 <p className="text-muted-foreground">
-                  Enfield Empire provides comprehensive support including business setup assistance, staff training,
-                  marketing support, supply chain management, financial guidance, and community building initiatives.
-                  Our dedicated partnership support team works closely with you throughout your business journey.
+                  Enfield Empire provides comprehensive support including
+                  business setup assistance, staff training, marketing support,
+                  supply chain management, financial guidance, and community
+                  building initiatives. Our dedicated partnership support team
+                  works closely with you throughout your business journey.
                 </p>
               </div>
 
@@ -1265,7 +1307,9 @@ export default function OpportunitiesPage() {
         {/* CTA Section */}
         <section className="py-20 bg-black text-white flex justify-center">
           <div className="container text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Join the Enfield Empire Family?</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              Ready to Join the Enfield Empire Family?
+            </h2>
             <p className="text-gray-300 max-w-2xl mx-auto mb-8">
               Take the first step towards a rewarding business partnership with
               one of the world&apos;s most iconic motorcycle brands.
@@ -1274,7 +1318,11 @@ export default function OpportunitiesPage() {
               <Button size="lg" className="bg-primary hover:bg-primary/90">
                 Apply for Partnership
               </Button>
-              <Button size="lg" variant="outline" className="text-black border-white hover:bg-white/10">
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-black border-white hover:bg-white/10"
+              >
                 Download Information Pack
               </Button>
             </div>
@@ -1282,256 +1330,16 @@ export default function OpportunitiesPage() {
         </section>
 
         {/* Contact Section */}
-        <section className="py-20 flex justify-center">
-          <div className="container">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              <div>
-                <h2 className="text-3xl font-bold mb-6">
-                  Contact Our Partnership Team
-                </h2>
-                <p className="text-muted-foreground mb-8">
-                  Have questions about becoming a Enfield Empire business partner? Our dedicated team is here to help you
-                  explore the opportunities.
-                </p>
-
-                <div className="space-y-6 mb-8">
-                  <div className="flex items-start">
-                    <div className="bg-primary/10 p-3 rounded-full mr-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-map-pin text-primary"
-                      >
-                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                        <circle cx="12" cy="10" r="3" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-bold mb-1">Global Headquarters</h3>
-                      <p className="text-muted-foreground">Main Block , Royan Enfield Tech Center ,
-296 , Rajiv Gandhi Salai , Elcot Sez, Sholinganahllur,
-Chennai, Tamil Nadu 600119</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <div className="bg-primary/10 p-3 rounded-full mr-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-phone text-primary"
-                      >
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                      </svg>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <div className="bg-primary/10 p-3 rounded-full mr-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-mail text-primary"
-                      >
-                        <rect width="20" height="16" x="2" y="4" rx="2" />
-                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-bold mb-1">Email Us</h3>
-                      <p className="text-muted-foreground">business@enfieldempire.com</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-muted p-6 rounded-lg">
-                  <h3 className="font-bold text-lg mb-4">
-                    Regional Partnership Offices
-                  </h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <h4 className="font-bold">North America</h4>
-                      <p className="text-muted-foreground text-sm">
-                        123 Business Avenue
-                        <br />
-                        Milwaukee, WI 12345
-                      </p>
-                    </div>
-                    <div>
-                      <h4 className="font-bold">Europe</h4>
-                      <p className="text-muted-foreground text-sm">
-                        456 Partner Street
-                        <br />
-                        London, UK EC1A 1BB
-                        <br />
-                        +44 (0) 20 1234 5678
-                      </p>
-                    </div>
-                    <div>
-                      <h4 className="font-bold">Asia Pacific</h4>
-                      <p className="text-muted-foreground text-sm">
-                        789 Dealer Road
-                        <br />
-                        Singapore 123456
-                        <br />
-                        +65 6123 4567
-                      </p>
-                    </div>
-                    <div>
-                      <h4 className="font-bold">India (Headquarters)</h4>
-                      <p className="text-muted-foreground text-sm">
-                        Enfield Empire Global HQ
-                        <br />
-                        Chennai, India 600042
-                        <br />
-                        +91 44 1234 5678
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white p-8 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold mb-6">
-                  Partnership Inquiry Form
-                </h3>
-                <form className="space-y-4">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <label
-                        htmlFor="first-name"
-                        className="text-sm font-medium"
-                      >
-                        First Name
-                      </label>
-                      <input
-                        id="first-name"
-                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        placeholder="John"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <label
-                        htmlFor="last-name"
-                        className="text-sm font-medium"
-                      >
-                        Last Name
-                      </label>
-                      <input
-                        id="last-name"
-                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        placeholder="Doe"
-                      />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="company" className="text-sm font-medium">
-                      Company Name
-                    </label>
-                    <input
-                      id="company"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      placeholder="Your Business Ltd."
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium">
-                      Email
-                    </label>
-                    <input
-                      id="email"
-                      type="email"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      placeholder="john.doe@example.com"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="phone" className="text-sm font-medium">
-                      Phone
-                    </label>
-                    <input
-                      id="phone"
-                      type="tel"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      placeholder="+91 123 456 7890"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="partnership-type"
-                      className="text-sm font-medium"
-                    >
-                      Partnership Type
-                    </label>
-                    <select
-                      id="partnership-type"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    >
-                      <option value="">Select Partnership Type</option>
-                      <option value="dealership">Exclusive Dealership</option>
-                      <option value="distribution">
-                        Regional Distribution
-                      </option>
-                      <option value="studio">Studio Store</option>
-                      <option value="service">Service Center</option>
-                    </select>
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="location" className="text-sm font-medium">
-                      Proposed Location/Region
-                    </label>
-                    <input
-                      id="location"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      placeholder="City, State, Country"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium">
-                      Additional Information
-                    </label>
-                    <textarea
-                      id="message"
-                      className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      placeholder="Tell us about your business experience, investment capacity, and why you're interested in partnering with Enfield Empire..."
-                    />
-                  </div>
-                  <Button type="submit" className="w-full">
-                    Submit Inquiry
-                  </Button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ContactUs />
       </main>
 
       <footer className="bg-black text-white py-12 flex justify-center">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Enfield Empire Business</h3>
+              <h3 className="text-xl font-bold mb-4">
+                Enfield Empire Business
+              </h3>
               <p className="text-gray-400 mb-4">
                 Your gateway to partnership opportunities with the world&apos;s
                 oldest motorcycle brand in continuous production.
@@ -1723,9 +1531,11 @@ Chennai, Tamil Nadu 600119</p>
                     <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
                     <circle cx="12" cy="10" r="3" />
                   </svg>
-                  <span className="text-gray-400">Main Block , Royan Enfield Tech Center ,
-296 , Rajiv Gandhi Salai , Elcot Sez, Sholinganahllur,
-Chennai, Tamil Nadu 600119</span>
+                  <span className="text-gray-400">
+                    Main Block , Royan Enfield Tech Center , 296 , Rajiv Gandhi
+                    Salai , Elcot Sez, Sholinganahllur, Chennai, Tamil Nadu
+                    600119
+                  </span>
                 </li>
                 <li className="flex items-center">
                   <svg
@@ -1743,7 +1553,9 @@ Chennai, Tamil Nadu 600119</span>
                     <rect width="20" height="16" x="2" y="4" rx="2" />
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                   </svg>
-                  <span className="text-gray-400">business@enfieldempire.com</span>
+                  <span className="text-gray-400">
+                    business@enfieldempire.com
+                  </span>
                 </li>
                 <li className="flex items-center">
                   <svg
@@ -1770,7 +1582,10 @@ Chennai, Tamil Nadu 600119</span>
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; {new Date().getFullYear()} Enfield Empire Business Partnerships. All rights reserved.</p>
+            <p>
+              &copy; {new Date().getFullYear()} Enfield Empire Business
+              Partnerships. All rights reserved.
+            </p>
             <p className="mt-2">
               <Link href="#" className="hover:text-white">
                 Privacy Policy

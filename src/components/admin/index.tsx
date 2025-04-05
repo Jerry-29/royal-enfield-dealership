@@ -50,15 +50,10 @@ export default function PartnershipsTable() {
   const [searchQuery, setSearchQuery] = useState("");
   const [filterType, setFilterType] = useState<string>("all");
   const [total, setTotal] = useState(0);
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const user = process.env.ADMIN_USERNAME || "";
-  const pwd = process.env.ADMIN_PASSWORD || "";
-  console.log(
-    "env",
-    process.env.ADMIN_USERNAME,
-    process.env.ADMIN_PASSWORD,
-    process.env
-  );
+  // const [isAuthenticated, setIsAuthenticated] = useState(false);
+  // const user = process.env.ADMIN_USERNAME || "";
+  // const pwd = process.env.ADMIN_PASSWORD || "";
+
   const fetchPartnerships = useCallback(async () => {
     try {
       setLoading(true);
@@ -157,23 +152,23 @@ export default function PartnershipsTable() {
     return () => clearTimeout(delayDebounceFn);
   }, [currentPage, itemsPerPage, searchQuery, filterType, fetchPartnerships]);
 
-  useEffect(() => {
-    if (!isAuthenticated) {
-      const username = window.prompt("Enter username:");
-      const password = window.prompt("Enter password:");
-      console.log(username, password, user, pwd);
-      if (username == user && password == pwd) {
-        setIsAuthenticated(true);
-      } else {
-        window.alert("Invalid credentials!");
-        window.location.href = "/"; // Redirect to home page
-      }
-    }
-  }, [isAuthenticated, pwd, user]);
+  // useEffect(() => {
+  //   if (!isAuthenticated) {
+  //     const username = window.prompt("Enter username:");
+  //     const password = window.prompt("Enter password:");
 
-  if (!isAuthenticated) {
-    return null;
-  }
+  //     if (username == user && password == pwd) {
+  //       setIsAuthenticated(true);
+  //     } else {
+  //       window.alert("Invalid credentials!");
+  //       window.location.href = "/"; // Redirect to home page
+  //     }
+  //   }
+  // }, [isAuthenticated, pwd, user]);
+
+  // if (!isAuthenticated) {
+  //   return null;
+  // }
 
   return (
     <div className="container mx-auto py-10">
@@ -293,12 +288,7 @@ export default function PartnershipsTable() {
                       </TableCell>
                       <TableCell>
                         <button
-                          onClick={() => {
-                            setSelectedPartnership(partnership);
-                            if (!partnership.isRead) {
-                              markAsRead(partnership._id);
-                            }
-                          }}
+                          onClick={() => setSelectedPartnership(partnership)}
                           className="text-slate-400 hover:text-slate-600"
                         >
                           {partnership.isRead ? <Mail /> : <Eye />}
@@ -464,6 +454,32 @@ export default function PartnershipsTable() {
                   {selectedPartnership.message}
                 </div>
               </div>
+
+              <div className="flex justify-between items-center mt-6 pt-6 border-t">
+                <div className="flex items-center gap-2">
+                  <div
+                    className={`h-2 w-2 rounded-full ${
+                      selectedPartnership.isRead ? "bg-gray-300" : "bg-blue-600"
+                    }`}
+                  />
+                  <span className="text-sm text-gray-500">
+                    {selectedPartnership.isRead ? "Read" : "Unread"}
+                  </span>
+                </div>
+              </div>
+              {!selectedPartnership.isRead && (
+                <Button
+                  onClick={() => {
+                    markAsRead(selectedPartnership._id);
+                    setSelectedPartnership(null);
+                  }}
+                  variant="secondary"
+                  className="flex items-center gap-2"
+                >
+                  <Eye className="h-4 w-4" />
+                  Mark as Read
+                </Button>
+              )}
             </div>
           )}
         </DialogContent>

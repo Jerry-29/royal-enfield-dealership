@@ -90,7 +90,7 @@ export const ContactUs = () => {
 
   return (
     <section id="contact" className="py-20 flex justify-center">
-      <div className="container">
+      <div id="contact-us-container" className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <h2 className="text-3xl font-bold mb-6">
@@ -175,11 +175,11 @@ export const ContactUs = () => {
             </div>
           </div>
 
-          <div className="bg-muted p-8 rounded-lg">
-            <h3 className="text-xl font-bold mb-6">Partnership Inquiry Form</h3>
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+          <div id="contact-form-wrap" className="bg-muted p-8 rounded-lg">
+            <h3 id="contact-header" className="text-xl font-bold mb-6">Partnership Inquiry Form</h3>
+            <form id="contact-form" onSubmit={handleSubmit(onSubmit)} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="space-y-2">
+                <div  className="space-y-2">
                   <label htmlFor="firstName" className="text-sm font-medium">
                     First Name
                   </label>
@@ -198,7 +198,7 @@ export const ContactUs = () => {
                   )}
                 </div>
 
-                <div className="space-y-2">
+                <div  className="space-y-2">
                   <label htmlFor="lastName" className="text-sm font-medium">
                     Last Name
                   </label>
@@ -218,7 +218,7 @@ export const ContactUs = () => {
                 </div>
               </div>
 
-              <div className="space-y-2">
+              <div id="form-first-child" className="space-y-2">
                 <label htmlFor="companyName" className="text-sm font-medium">
                   Company Name
                 </label>
