@@ -21,6 +21,7 @@ import { LearnMore } from "@/components/learn-more";
 import { BecomePartner } from "@/components/become-partner";
 import { ExploreOpportunity } from "@/components/explore-opprtunity";
 import { BUSINESS_EMAIL } from "@/config/constants";
+import { ApplyBtn } from "@/components/apply";
 
 export const metadata: Metadata = homeMetadata;
 
@@ -117,13 +118,7 @@ export default function Home() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <ExploreOpportunity />
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="bg-white text-black hover:bg-white/90"
-                  >
-                    <a href="#contact">Apply Now</a>
-                  </Button>
+                  <ApplyBtn />
                 </div>
               </div>
             </div>

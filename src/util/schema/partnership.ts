@@ -1,58 +1,62 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
-const partnershipSchema = new mongoose.Schema({
+const PartnershipSchema = new mongoose.Schema({
   firstName: {
     type: String,
-    required: [true, 'First name is required'],
-    trim: true
+    required: [true, "First name is required"],
   },
   lastName: {
     type: String,
-    required: [true, 'Last name is required'],
-    trim: true
+    required: [true, "Last name is required"],
   },
   companyName: {
     type: String,
-    required: [true, 'Company name is required'],
-    trim: true
+    required: [true, "Company name is required"],
   },
   email: {
     type: String,
-    required: [true, 'Email is required'],
-    unique: true,
-    trim: true,
-    lowercase: true,
-    match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please enter a valid email']
+    required: [true, "Email is required"],
   },
   phone: {
     type: String,
-    required: [true, 'Phone number is required'],
-    trim: true
+    required: [true, "Phone number is required"],
   },
   partnershipType: {
     type: String,
-    required: [true, 'Partnership type is required'],
-    enum: ['dealership', 'distribution', 'studio']
+    enum: ["dealership", "distribution", "studio"],
+    required: [true, "Partnership type is required"],
   },
   location: {
     type: String,
-    required: [true, 'Location is required'],
-    trim: true
+    required: [true, "Location is required"],
   },
   message: {
     type: String,
-    required: [true, 'Additional information is required'],
-    trim: true
+    required: [true, "Message is required"],
   },
   status: {
     type: String,
-    enum: ['pending', 'reviewed', 'approved', 'rejected'],
-    default: 'pending'
+    enum: ["pending", "approved", "rejected"],
+    default: "pending",
+  },
+  isRead: {
+    type: Boolean,
+    default: false,
   },
   submittedAt: {
     type: Date,
-    default: Date.now
-  }
+    default: Date.now,
+  },
+  updatedAt: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
-export default mongoose.models.Partnership || mongoose.model('Partnership', partnershipSchema);
+// Add a pre-save middleware to update the updatedAt field
+PartnershipSchema.pre('save', function(next) {
+  this.updatedAt = new Date();
+  next();
+});
+
+export default mongoose.models.Partnership || mongoose.model("Partnership", PartnershipSchema);

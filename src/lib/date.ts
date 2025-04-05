@@ -7,7 +7,7 @@ dayjs.extend(relativeTime);
 dayjs.extend(localizedFormat);
 
 export const formatDate = (dateInput: string | Date | undefined) => {
-    console.log("Date input:", dateInput); // Debugging line
+
   if (!dateInput) {
     return {
       full: 'N/A',
