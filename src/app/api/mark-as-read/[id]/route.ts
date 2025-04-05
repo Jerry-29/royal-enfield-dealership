@@ -49,7 +49,7 @@ export async function PUT(
         message:
           error instanceof Error
             ? error.message
-            : "Failed to update partnership ...",
+            : "Failed to update partnership .....",
       },
       { status: 500 }
     );
