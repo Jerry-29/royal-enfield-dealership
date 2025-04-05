@@ -4,11 +4,12 @@ import Partnership from "@/util/schema/partnership";
 
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  context: { params: Record<string, string> }
 ) {
+  const id = context.params.id;
+
   try {
     await dbConnect();
-    const id = params.id;
 
     if (!id) {
       return NextResponse.json(
@@ -49,7 +50,7 @@ export async function PUT(
         message:
           error instanceof Error
             ? error.message
-            : "Failed to update partnership .....",
+            : "Failed to update partnership",
       },
       { status: 500 }
     );
