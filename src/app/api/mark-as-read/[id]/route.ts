@@ -1,15 +1,11 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import dbConnect from "@/lib/dbConnect";
 import Partnership from "@/util/schema/partnership";
 
-export async function PUT(
-  request: NextRequest,
-  context: { params: Record<string, string> }
-) {
-  const id = context.params.id;
-
+export async function PUT(request: Request,{ params }: { params: Promise<{ id: string }> }) {
   try {
     await dbConnect();
+    const id = await params;
 
     if (!id) {
       return NextResponse.json(
@@ -18,6 +14,7 @@ export async function PUT(
       );
     }
 
+    // Update document directly
     const updatedPartnership = await Partnership.findByIdAndUpdate(
       id,
       {
@@ -27,7 +24,7 @@ export async function PUT(
       {
         new: true,
         runValidators: true,
-        lean: true,
+        lean: true, // Return plain JavaScript object
       }
     );
 
