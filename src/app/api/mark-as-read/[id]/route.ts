@@ -2,13 +2,17 @@ import { NextRequest, NextResponse } from "next/server";
 import dbConnect from "@/lib/dbConnect";
 import Partnership from "@/util/schema/partnership";
 
-export async function PUT(
-  request: NextRequest,
-  { params }: { params: { id: string } }
-) {
+// Define the type for the dynamic route context
+type Params = {
+  params: {
+    id: string;
+  };
+};
+
+export async function PUT(request: NextRequest, { params }: Params) {
   try {
     await dbConnect();
-    const id = await Promise.resolve(params.id);
+    const id = params.id;
 
     if (!id) {
       return NextResponse.json(
@@ -17,7 +21,6 @@ export async function PUT(
       );
     }
 
-    // Update document directly
     const updatedPartnership = await Partnership.findByIdAndUpdate(
       id,
       {
@@ -27,7 +30,7 @@ export async function PUT(
       {
         new: true,
         runValidators: true,
-        lean: true, // Return plain JavaScript object
+        lean: true,
       }
     );
 
