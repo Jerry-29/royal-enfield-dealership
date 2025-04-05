@@ -2,13 +2,14 @@ import { NextResponse } from "next/server";
 import dbConnect from "@/lib/dbConnect";
 import Partnership from "@/util/schema/partnership";
 
+
 export async function PUT(
   request: Request,
-  context: { params: { id: string } }
+  { params }: { params: { id: string } }
 ) {
   try {
     await dbConnect();
-    const id = await Promise.resolve(context.params.id);
+    const id = await Promise.resolve(params.id);
 
     if (!id) {
       return NextResponse.json(
@@ -22,12 +23,12 @@ export async function PUT(
       id,
       {
         $set: { isRead: true },
-        $currentDate: { updatedAt: true }
+        $currentDate: { updatedAt: true },
       },
-      { 
+      {
         new: true,
         runValidators: true,
-        lean: true // Return plain JavaScript object
+        lean: true, // Return plain JavaScript object
       }
     );
 
@@ -40,15 +41,17 @@ export async function PUT(
 
     return NextResponse.json({
       success: true,
-      data: updatedPartnership
+      data: updatedPartnership,
     });
-
   } catch (error) {
     console.error("Error marking partnership as read:", error);
     return NextResponse.json(
-      { 
-        success: false, 
-        message: error instanceof Error ? error.message : "Failed to update partnership"
+      {
+        success: false,
+        message:
+          error instanceof Error
+            ? error.message
+            : "Failed to update partnership",
       },
       { status: 500 }
     );
